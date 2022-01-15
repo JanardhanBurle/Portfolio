@@ -1,0 +1,80 @@
+<div class="container">
+    <div class="toolbar" role="banner" [ngClass]="{'toolbar-bg': isScrolled }">
+        <img width="40" alt="Profile" src="assets/images/profile-pic.png" />
+        <h1>Portfolio</h1>
+        <div class="spacer"></div>
+        <!-- <a aria-label="Angular on twitter" href="#home" title="Home">
+           Home
+        </a> -->
+        <a aria-label="Angular on twitter" href="#aboutme" title="About Me">
+            About Me
+         </a>
+        <a aria-label="Angular on twitter" href="#services" title="Services">
+            Services
+         </a>
+        <a aria-label="Angular on twitter" href="#skills" title="Skills">
+            Skills
+         </a>
+        <a aria-label="Angular on twitter" href="#projects" title="Projects">
+            Projects
+         </a>
+
+        <a aria-label="Angular on twitter" href="#contactme" title="Contact Me">
+            Contact Me
+         </a>
+    </div>
+
+    <div class="content" role="main">
+        <section class="home right" id="home">
+            <div class="section">
+                <div class="name-info">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Janardhanarao Burle</div>
+                    <div class="text-3">And I'm a <span class="typing">Full Stack Developer</span><span class="typed-cursor typed-cursor--blink"></span></div>
+                    <br>
+                    <a class="button" target="_blank" rel="noopener" href="https://angular.io/tutorial">
+                        <!-- <img class="linked-in-img" src="assets/images/linked-in.svg" alt=""> -->
+                        Hire Me
+                        <img class="arrow" src="assets/images/arrow.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile-sec">
+
+                    <div class="slider">
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-container *ngFor="let slide of slidesStore">
+                                <ng-template carouselSlide [id]="slide.id">
+                                    <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                                </ng-template>
+                            </ng-container>
+
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="home right" id="aboutme">
+            <div class="section">
+                <div class="profile-sec">
+
+                    <div class="profile-pic-large">
+                        <img width="200" alt="Profile" src="assets/images/profile-pic.png" />
+                    </div>
+                </div>
+                <div class="about-me">
+                    <br>
+                    <p>
+                        I have a Bachelor's Degree in Computer Science Engineering.I am currently Looking for job in Full-Stack. I am open to learning in the role I am assigned to. After B-TECH I started exploring different option ,I've spent two years modernizing my skills.
+                        I had done certification in software testing (Nptel) & python (Coursera) and Finally founded web development to be an amazing domain.I joined the CCBP-4.0 intensive program that specialises me with MERN stack web development. Now
+                        I have strong basics on front end and back end technologies.During my journey here ,there have been challenges in some concepts.Without giving up,I took help of mentors and co-learners .
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+</div>
