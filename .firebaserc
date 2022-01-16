@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "portfolio-32715"
-  }
+    "default": "janardhan-portfolio",
+    "Janardhan-Portfolio": "janardhan-portfolio"
+  },
+  "targets": {}
 }
