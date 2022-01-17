@@ -1,4 +1,11 @@
 <app-header></app-header>
-<div class="profile-body">
-    <h1>Hello there, <br> My name is <span>Janardhanarao Burle</span><br> And I'm a <br></h1>
+<div [@bounce]="bounceDivState" class="profile-body">
+    <h1>Hello there, <br> My name is <span>Janardhanarao Burle</span><br></h1>
+    <!-- Terminal -->
+    <div class="terminal">
+        <pre>And I'm a <span class="typing">Full Stack Developer</span><span class="typed-cursor typed-cursor--blink"></span>
+        </pre>
+    </div>
+
+
 </div>
