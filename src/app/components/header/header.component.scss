@@ -1,0 +1,66 @@
+:host {
+    .header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px;
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 160px;
+            font-size: 26px;
+            color: #f1a100;
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .toolbar {
+        color: #000;
+        text-decoration: none;
+        margin: 5px 10px;
+        padding: 2px 15px;
+        cursor: pointer;
+        min-width: 60px;
+        text-align: center;
+        font-weight: bold;
+        z-index: 21;
+        a {
+            text-decoration: none;
+            color: #000;
+            margin: 5px 10px;
+            padding: 2px 15px;
+            cursor: pointer;
+            min-width: 60px;
+            text-align: center;
+            font-size: 14px;
+        }
+        a:hover {
+            border: 1px solid;
+            border-radius: 20px;
+        }
+    }
+    .toolbar-bg {
+        background-color: #f4573d !important;
+    }
+    .toolbar img {
+        margin: 0 16px 0 0;
+        border-radius: 50%;
+        background: #FFF;
+    }
+    .toolbar #twitter-logo {
+        height: 40px;
+        margin: 0 8px;
+    }
+    .toolbar #youtube-logo {
+        height: 40px;
+        margin: 0 16px;
+    }
+    .toolbar #twitter-logo:hover,
+    .toolbar #youtube-logo:hover {
+        opacity: 0.8;
+    }
+}
