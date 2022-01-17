@@ -20,7 +20,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/portfolio",
+                        "outputPath": "dist/test",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -31,9 +31,6 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
-                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
-                            "node_modules/animate.css/animate.min.css",
                             "src/styles.scss"
                         ],
                         "scripts": []
@@ -47,7 +44,7 @@
                             }, {
                                 "type": "anyComponentStyle",
                                 "maximumWarning": "2kb",
-                                "maximumError": "10kb"
+                                "maximumError": "4kb"
                             }],
                             "fileReplacements": [{
                                 "replace": "src/environments/environment.ts",
@@ -84,7 +81,7 @@
                         "browserTarget": "portfolio:build"
                     }
                 },
-                "test": {
+                "portfolio": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
                         "main": "src/test.ts",
