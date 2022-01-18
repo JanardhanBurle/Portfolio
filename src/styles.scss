@@ -16,3 +16,53 @@ p {
 .spacer {
     flex: 1;
 }
+
+.btn {
+    all: unset;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    height: 12px;
+    width: 90px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+    color: #FFF;
+    font-size: 14px;
+    svg {
+        font-size: 25px;
+        width: 20px;
+        margin-right: 10px;
+    }
+}
+
+.btn-primary {
+    border: 3px solid #0a66c2;
+    background-color: #0a66c2;
+}
+
+.btn-primary:hover {
+    background: #ffffff;
+    border: 3px solid #004a8b;
+    cursor: pointer;
+    color: #004A91;
+}
+
+.btn-secondary {
+    border: 3px solid #8054F6;
+    background: #8054F6;
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    border: 3px solid #8054F6;
+    cursor: pointer;
+    color: #8054F6;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}

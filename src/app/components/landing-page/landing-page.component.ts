@@ -1,6 +1,7 @@
 import {
   animate,
   keyframes,
+  state,
   style,
   transition,
   trigger,
@@ -13,18 +14,17 @@ declare var Typed: any;
   templateUrl: "./landing-page.component.html",
   styleUrls: ["./landing-page.component.scss"],
   animations: [
-    trigger("bounce", [
-      transition("* => active", [
-        animate(
-          "3s",
-          keyframes([
-            style({ transform: "scale(0.9, 1.1) translateY(-100px)" }),
-            style({ transform: "scale(1.05, 0.95) translateY(0)" }),
-            style({ transform: "scale(1,1) translateY(-7px)" }),
-            style({ transform: "scale(1,1) translateY(0)" }),
-          ])
-        ),
-      ]),
+    trigger("slideIn", [
+      state("void", style({ transform: "translateX(100px)" })),
+      transition(":enter", [animate(500)]),
+    ]),
+    trigger("hideShow", [
+      state("true", style({ opacity: 0 })),
+      transition("0 => 1", animate(300)),
+    ]),
+    trigger("fade", [
+      state("void", style({ opacity: 0 })),
+      transition(":enter", [animate(1000)]),
     ]),
   ],
 })
@@ -32,22 +32,32 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
   constructor() {}
 
   bounceDivState = "initial";
-
+  showContent = false;
   ngOnInit(): void {
     this.bounceDivState = "active";
   }
 
   ngAfterViewInit(): void {
-    var typed = new Typed(".typing", {
+    var typed = new Typed(".intro", {
       strings: [
-        "Flutter Developer",
-        "Angular Developer",
-        "Freelancer",
-        "Badminton Player",
+        `Hello there, 
+        <br> My name is 
+        <span style="font-size: 22px;color:#00498c;font-weight:bold;margin-left:10px"> Janardhanarao Burle</span>
+        <br> And I'm <br>
+        <div style="display: flex;
+        align-items: center;
+        color:#0a65c2;
+        margin:10px 0;
+        font-size:20px;
+        font-weight: 500;">
+        <img style="margin-right: 10px;" src="assets/images/angular.svg" height="25" alt=""> <span style="margin-right:10px">Angular</span> | 
+        <img style="margin-right: 10px;margin-left: 10px;" src="assets/images/flutter.svg" height="25" alt=""> Flutter Developer</div>
+        `,
       ],
-      typeSpeed: 100,
-      backSpeed: 60,
-      loop: true,
+      typeSpeed: 40,
+      backSpeed: 40,
+      showCursor: false,
+      loop: false,
     });
   }
 }
