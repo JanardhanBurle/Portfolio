@@ -31,7 +31,36 @@ import { Component, OnInit } from "@angular/core";
 export class HeaderComponent implements OnInit {
   constructor() {}
   bounceDivState = "initial";
-
+  routerLinks = [
+    {
+      path: "home",
+      label: "Home",
+    },
+    {
+      path: "about-me",
+      label: "About Me",
+    },
+    {
+      path: "experience",
+      label: "Experience",
+    },
+    {
+      path: "projects",
+      label: "Projects",
+    },
+    {
+      path: "skills",
+      label: "Skills",
+    },
+    {
+      path: "education",
+      label: "Education",
+    },
+    {
+      path: "contact-me",
+      label: "Contact Me",
+    },
+  ];
   ngOnInit(): void {
     this.bounceDivState = "active";
   }

@@ -10,7 +10,7 @@
             justify-content: space-between;
             width: 160px;
             font-size: 26px;
-            color: #f1a100;
+            color: #00498c;
             img {
                 width: 50px;
                 height: 50px;
@@ -19,32 +19,53 @@
         }
     }
     .toolbar {
-        color: #000;
-        text-decoration: none;
-        margin: 5px 10px;
-        padding: 2px 15px;
-        cursor: pointer;
-        min-width: 60px;
-        text-align: center;
-        font-weight: bold;
         z-index: 21;
-        a {
-            text-decoration: none;
-            color: #000;
-            margin: 5px 10px;
-            padding: 2px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .router-link {
+            margin: 5px 5px;
+            padding: 0px 10px;
             cursor: pointer;
-            min-width: 60px;
             text-align: center;
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: bold;
         }
-        a:hover {
-            border: 1px solid;
-            border-radius: 20px;
+        .router-link:hover {
+            cursor: pointer;
+        }
+        .title {
+            color: #0a65c2;
+            position: relative;
+            text-decoration: none;
+        }
+        .title::after {
+            position: absolute;
+            content: "";
+            width: 0%;
+            height: 3px;
+            background-color: #0a65c2;
+            left: 50%;
+            bottom: -5px;
+            transition: all 0.4s ease-in-out;
+        }
+        .router-link:hover .title::after {
+            width: 100%;
+            left: 0;
+        }
+        .activated-route::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: #0a65c2;
+            left: 0;
+            bottom: -5px;
+            transition: all 0.4s ease-in-out;
         }
     }
     .toolbar-bg {
-        background-color: #f4573d !important;
+        background-color: #00498c !important;
     }
     .toolbar img {
         margin: 0 16px 0 0;
