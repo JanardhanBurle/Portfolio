@@ -3,8 +3,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Cairo', sans-serif;
-    width: 100%;
+    font-family: "Cairo", sans-serif;
+    padding: 100px;
     .container {
         width: 100%;
         svg#clouds {
@@ -30,72 +30,9 @@
             right: 40%;
             opacity: 0.2;
         }
-        .section-container {
-            height: 600px;
-            border: 5px solid #ffb623;
-            border-radius: 20px;
-            border-bottom-left-radius: 0;
-            overflow: hidden;
-            position: relative;
-            padding: 10px;
-            margin: 50px 100px 0;
-            background: #ffffff;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            svg#profile-bg1 {
-                position: absolute;
-                top: -400px;
-                right: -125px;
-                z-index: 10;
-                width: 500px;
-            }
-            svg#profile-bg2 {
-                position: absolute;
-                top: -350px;
-                left: -235px;
-                z-index: 10;
-                width: 300px;
-            }
-        }
     }
     .app-info {
         font-size: 14px;
         padding: 20px;
-    }
-    @media screen and (max-width: 767px) {
-        .container {
-            width: 100%;
-            .section-container {
-                height: 600px;
-                border: 5px solid #ffb623;
-                border-radius: 20px;
-                overflow: hidden;
-                position: relative;
-                padding: 10px;
-                margin: 0px;
-                background: #ffffff;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                svg#profile-bg1 {
-                    position: absolute;
-                    top: -400px;
-                    right: -125px;
-                    z-index: 10;
-                    width: 500px;
-                }
-                svg#profile-bg2 {
-                    position: absolute;
-                    top: -350px;
-                    left: -235px;
-                    z-index: 10;
-                    width: 300px;
-                }
-                .profile-img {
-                    position: absolute;
-                    bottom: -50px;
-                    right: -150px;
-                    z-index: 10;
-                    width: 600px;
-                }
-            }
-        }
     }
 }
