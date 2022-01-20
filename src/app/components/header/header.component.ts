@@ -7,6 +7,7 @@ import {
   keyframes,
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-header",
@@ -19,8 +20,8 @@ import { Component, OnInit } from "@angular/core";
           "3s",
           keyframes([
             style({ transform: "scale(0.9, 1.1) translateY(-100px)" }),
-            style({ transform: "scale(1.05, 0.95) translateY(0)" }),
-            style({ transform: "scale(1,1) translateY(-7px)" }),
+            style({ transform: "scale(1, 0.95) translateY(10px)" }),
+            style({ transform: "scale(1,0.95) translateY(0px)" }),
             style({ transform: "scale(1,1) translateY(0)" }),
           ])
         ),
@@ -29,7 +30,7 @@ import { Component, OnInit } from "@angular/core";
   ],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
   bounceDivState = "initial";
   routerLinks = [
     {
@@ -63,5 +64,9 @@ export class HeaderComponent implements OnInit {
   ];
   ngOnInit(): void {
     this.bounceDivState = "active";
+  }
+
+  gotToHome() {
+    this.router.navigate(["home"]);
   }
 }

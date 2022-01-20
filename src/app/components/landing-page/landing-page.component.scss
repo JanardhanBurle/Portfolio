@@ -1,44 +1,24 @@
 :host {
-    .profile-img {
-        position: absolute;
-        bottom: -50px;
-        right: -150px;
-        z-index: 10;
-        width: 600px;
-    }
-    .profile-body {
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0px 70px;
-        min-height: 400px;
-        .name {
-            font-size: 22px;
-            color: #00498c;
-            margin-left: 5px;
-        }
-    }
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     .terminal {
         position: relative;
-        width: 650px;
-        min-height: 450px;
-        border-radius: 6px;
-        margin-top: 8px;
+        width: 75%;
+        min-height: 550px;
+        border-radius: 10px;
         overflow: hidden;
-        background-color: #0f0f100d;
+        border: 1px solid #cfcfcf5e;
+        background: #FFF;
         .header {
-            background: rgb(58, 58, 58);
+            background: #3a3a3a;
             color: #c2c3c4;
-            width: 100%;
-            font-size: 2rem;
-            line-height: 0;
             padding: 10px;
-            text-indent: 4px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            flex-direction: row;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             .dots {
                 display: flex;
                 align-items: center;
@@ -69,16 +49,86 @@
             font-size: 22px;
             font-weight: 500;
         }
-        p {
+        .body {
             padding: 15px;
             margin: 0;
             text-align: left;
-            line-height: 20px;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: row;
+            line-height: 22px;
+            .left {
+                .content {
+                    color: #ccccccc2;
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin: 0;
+                    .visible {
+                        font-size: 22px;
+                        color: #000;
+                        font-family: "Cairo", sans-serif;
+                        line-height: 35px;
+                    }
+                    .name {
+                        font-size: 30px;
+                        color: #0a65c2;
+                        font-weight: bold;
+                        font-family: "Cairo", sans-serif;
+                        line-height: 35px;
+                    }
+                    .desc {
+                        font-size: 16px;
+                        color: #000;
+                        font-family: "Cairo", sans-serif;
+                        line-height: 25px;
+                    }
+                    .tech-stack-group {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin: 0 110px 0;
+                        color: #0964c2;
+                        font-size: 18px;
+                        font-family: "Cairo", sans-serif;
+                    }
+                    .item {
+                        display: flex;
+                        width: 100px;
+                        margin: 5px;
+                        padding: 10px;
+                        border: 1px solid #5c91d442;
+                        border-radius: 5px;
+                        font-family: "Cairo", sans-serif;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .body:hover {
+            padding: 15px;
+            margin: 0;
+            text-align: left;
             min-height: 250px;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: row;
+            line-height: 22px;
+            .left {
+                .content {
+                    color: #ccccccc2;
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin: 0;
+                }
+            }
         }
     }
     .action-btns {
         display: flex;
-        margin: 30px 0;
+        margin: 10px 0;
+        font-family: "Cairo", sans-serif;
     }
 }

@@ -1,20 +1,14 @@
-<div [@bounce]="bounceDivState" class="header">
+<div class="header">
     <div class="profile-section">
         <img src="assets/images/profile.png" alt="" srcset=""> Portfolio
     </div>
     <div class="toolbar" role="banner">
-
         <ng-container *ngFor="let router of routerLinks">
-
             <div class="router-link">
-                <a class="title" [routerLink]="router.path" routerLinkActive="activated-route" title="About Me">
-                {{router.label}}
-             </a>
+                <a class="title" href="#{{router.path}}" title="About Me">
+                    {{router.label}}
+                 </a>
             </div>
-
-
         </ng-container>
-
-
     </div>
 </div>
