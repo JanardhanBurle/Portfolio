@@ -1,4 +1,42 @@
 :host {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        .profile-img-loading {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgb(82, 221, 140);
+            transform: scale(1);
+            animation: pulse 2s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #554eca;
+        }
+        .description {
+            font-size: 18px;
+            color: #ff6684;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+            }
+            70% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0.9);
+            }
+        }
+    }
     header {
         position: sticky;
         top: 0;
@@ -6,5 +44,8 @@
     }
     section {
         margin: 20px 100px;
+    }
+    .profile-img-loading {
+        width: 350px;
     }
 }

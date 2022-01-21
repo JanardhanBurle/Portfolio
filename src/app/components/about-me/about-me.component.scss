@@ -1,0 +1,24 @@
+:host {
+    font-family: 'Cairo', sans-serif;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 50px 0;
+        .about-me-img {
+            width: 40%;
+        }
+        .about-me {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+            width: 60%;
+            margin-left: 30px;
+            .title {
+                font-size: 40px;
+                color: #004a8b;
+            }
+        }
+    }
+}
