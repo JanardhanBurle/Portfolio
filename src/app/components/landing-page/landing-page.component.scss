@@ -5,12 +5,15 @@
     justify-content: space-between;
     .terminal {
         position: relative;
-        width: 75%;
+        width: 100%;
         min-height: 550px;
         border-radius: 10px;
         overflow: hidden;
         border: 1px solid #cfcfcf5e;
         background: #FFF;
+        .profile-img {
+            width: 100%;
+        }
         .header {
             background: #3a3a3a;
             color: #c2c3c4;
@@ -59,6 +62,7 @@
             flex-direction: row;
             line-height: 22px;
             .left {
+                width: 70%;
                 .content {
                     color: #ccccccc2;
                     font-size: 13px;
@@ -105,6 +109,9 @@
                     }
                 }
             }
+            .right {
+                width: 30%;
+            }
         }
         .body:hover {
             padding: 15px;
@@ -130,5 +137,7 @@
         display: flex;
         margin: 10px 0;
         font-family: "Cairo", sans-serif;
+        align-items: center;
+        justify-content: center;
     }
 }

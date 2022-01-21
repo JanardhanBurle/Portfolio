@@ -1,19 +1,28 @@
-<header>
-    <app-header>
-    </app-header>
-</header>
+<ng-container *ngIf="loading;else page">
+    <div class="container">
+        <img [@bounce]="bounceDivState" class="profile-img-loading" alt="Profile" src="assets/images/full.svg" />
+        <div class="title">Welcome to my Portfolio</div>
+        <span class="description">Portfolio is loading....</span>
+    </div>
+</ng-container>
 
-<div class="main-container">
-    <section id="home">
-        <app-landing-page></app-landing-page>
-    </section>
-    <section id="about-me">
-        <app-about-me></app-about-me>
-    </section>
-    <section id="experience">
-        <app-experience></app-experience>
-    </section>
-    <section id="projects">
-        <app-projects></app-projects>
-    </section>
-</div>
+<ng-template #page>
+    <header>
+        <app-header></app-header>
+    </header>
+
+    <div class="main-container">
+        <section id="home">
+            <app-landing-page></app-landing-page>
+        </section>
+        <section id="about-me">
+            <app-about-me></app-about-me>
+        </section>
+        <section id="experience">
+            <app-experience></app-experience>
+        </section>
+        <section id="projects">
+            <app-projects></app-projects>
+        </section>
+    </div>
+</ng-template>

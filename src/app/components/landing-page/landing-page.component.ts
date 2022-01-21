@@ -26,10 +26,10 @@ declare var Typed: any;
         animate(
           "3s",
           keyframes([
-            style({ transform: "scale(0.9, 1.1) translateY(-100px)" }),
+            style({ transform: "scale(0.9, 1.1) translateX(-50%)" }),
             style({ transform: "scale(1, 0.95) translateY(0)" }),
-            style({ transform: "scale(1,1) translateY(-7px)" }),
-            style({ transform: "scale(1,1) translateY(0)" }),
+            style({ transform: "scale(1,1) translateX(-10px)" }),
+            style({ transform: "scale(1,1) translateX(0)" }),
           ])
         ),
       ]),
