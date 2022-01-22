@@ -32,6 +32,32 @@ export class AboutMeComponent implements OnInit {
 
   bounceDivState = "initial";
   showContent = false;
+  technology = [
+    {
+      label: "HTML",
+      progress: "95%",
+    },
+    {
+      label: "CSS",
+      progress: "90%",
+    },
+    {
+      label: "Javascript",
+      progress: "93%",
+    },
+    {
+      label: "Angular",
+      progress: "90%",
+    },
+    {
+      label: "Node Js",
+      progress: "87%",
+    },
+    {
+      label: "Flutter",
+      progress: "87%",
+    },
+  ];
   ngOnInit(): void {
     this.bounceDivState = "active";
   }
