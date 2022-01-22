@@ -14,6 +14,7 @@ import { SkillsComponent } from "./components/skills/skills.component";
 import { EducationComponent } from "./components/education/education.component";
 import { ContactMeComponent } from "./components/contact-me/contact-me.component";
 import { NgxTypedJsModule } from "ngx-typed-js";
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NgxTypedJsModule } from "ngx-typed-js";
     SkillsComponent,
     EducationComponent,
     ContactMeComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,

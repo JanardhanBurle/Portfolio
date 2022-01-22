@@ -10,19 +10,34 @@
     <header>
         <app-header></app-header>
     </header>
-
-    <div class="main-container">
+    <div class="item" data-aos="fade-up">
         <section id="home">
             <app-landing-page></app-landing-page>
         </section>
+    </div>
+    <div class="item" data-aos="fade-down">
         <section id="about-me">
             <app-about-me></app-about-me>
         </section>
-        <section id="experience">
-            <app-experience></app-experience>
-        </section>
-        <section id="projects">
-            <app-projects></app-projects>
+    </div>
+    <div class="item" data-aos="fade-down">
+        <section id="about-me">
+            <app-about-me></app-about-me>
         </section>
     </div>
+    <div class="item" data-aos="fade-down">
+        <section id="experience">
+            <app-about-me></app-about-me>
+        </section>
+    </div>
+    <div class="item" data-aos="fade-down">
+        <section id="projects">
+            <app-about-me></app-about-me>
+        </section>
+    </div>
+
+
+
+
+
 </ng-template>

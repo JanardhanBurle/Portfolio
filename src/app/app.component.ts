@@ -7,7 +7,7 @@ import {
   trigger,
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
-
+declare var AOS: any;
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -18,9 +18,9 @@ import { Component, OnInit } from "@angular/core";
         animate(
           "3s",
           keyframes([
-            style({ transform: "scale(0.9, 1.1) translateY(-100px)" }),
+            style({ transform: "scale(0.9, 1.1) translateY(-200px)" }),
             style({ transform: "scale(1, 0.95) translateY(0)" }),
-            style({ transform: "scale(1,1) translateY(-7px)" }),
+            style({ transform: "scale(1,1) translateY(-50px)" }),
             style({ transform: "scale(1,1) translateY(0)" }),
           ])
         ),
@@ -46,9 +46,10 @@ export class AppComponent implements OnInit {
   showContent = false;
 
   ngOnInit(): void {
+    AOS.init({ duration: 1200 });
     this.bounceDivState = "active";
     setTimeout(() => {
       this.loading = false;
-    }, 3000);
+    }, 0);
   }
 }
