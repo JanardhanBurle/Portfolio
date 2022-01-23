@@ -58,6 +58,44 @@ export class AboutMeComponent implements OnInit {
       progress: "87%",
     },
   ];
+
+  techStackCards = [
+    {
+      imgUrl: "assets/images/angular-material.svg",
+      shortDescription:
+        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
+      longDescription: "UI Component libraries",
+      aos: "fade-right",
+    },
+    {
+      imgUrl: "assets/images/angular-material.svg",
+      shortDescription:
+        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
+      longDescription: "UI Component libraries",
+      aos: "fade-right",
+    },
+    {
+      imgUrl: "assets/images/angular-material.svg",
+      shortDescription:
+        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
+      longDescription: "UI Component libraries",
+      aos: "fade-up",
+    },
+    {
+      imgUrl: "assets/images/angular-material.svg",
+      shortDescription:
+        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
+      longDescription: "UI Component libraries",
+      aos: "fade-left",
+    },
+    {
+      imgUrl: "assets/images/angular-material.svg",
+      shortDescription:
+        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
+      longDescription: "UI Component libraries",
+      aos: "fade-left",
+    },
+  ];
   ngOnInit(): void {
     this.bounceDivState = "active";
   }

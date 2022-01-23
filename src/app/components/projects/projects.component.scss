@@ -1,0 +1,91 @@
+:host {
+    $background-color: #3d5980;
+    $bar-empty: #e6e6e6;
+    $bar-color: #3c88cd;
+    $glow-width: 60px;
+    $glow-radius: 10px;
+    $glow-color: #04bfff;
+    font-family: 'Cairo', sans-serif;
+    .title {
+        text-align: center;
+        font-size: 34px;
+        color: #004a8b;
+        margin: 20px auto;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 25px 0;
+        .left {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            min-height: 550px;
+            min-width: 550px;
+        }
+        .card {
+            width: 200px;
+            border: 1px solid #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            img {
+                height: 100px;
+            }
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+        .card-small {
+            width: 200px;
+            border: 1px solid #f2f2f2;
+            padding: 15px;
+            border-radius: 10px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            img {
+                height: 80px;
+            }
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+        app-progress-bar {
+            width: 100%;
+        }
+        .right {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 60%;
+            margin-left: 30px;
+            .title {
+                font-size: 32px;
+                color: #004a8b;
+            }
+            .link {
+                color: #004b8a;
+                text-decoration: none;
+            }
+            .tech-stack {
+                font-size: 20px;
+                margin: 60px auto 10px;
+                color: #004a8b;
+            }
+        }
+    }
+}

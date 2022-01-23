@@ -64,7 +64,7 @@
             .left {
                 width: 70%;
                 .content {
-                    color: #ccccccc2;
+                    color: #000000;
                     font-size: 13px;
                     line-height: 20px;
                     margin: 0;
@@ -123,6 +123,7 @@
             justify-content: space-between;
             flex-direction: row;
             line-height: 22px;
+            cursor: pointer;
             .left {
                 .content {
                     color: #ccccccc2;

@@ -1,10 +1,9 @@
 :host {
-    $background-color: #3d5980;
     $bar-empty: #e6e6e6;
-    $bar-color: #3c88cd;
+    $bar-color: #6c63ff;
     $glow-width: 60px;
     $glow-radius: 10px;
-    $glow-color: #04bfff;
+    $glow-color: #a49ff5;
     font-family: 'Cairo', sans-serif;
     // progress bar appearance
     .progress-bar {
@@ -50,7 +49,7 @@
     }
     // messages 
     .label {
-        color: #004b8a;
+        color: #6c63ff;
         font-size: 14px;
     }
     // animations
