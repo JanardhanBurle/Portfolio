@@ -16,7 +16,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        margin: 50px 0;
+        margin: 25px 0;
         .left {
             width: 40%;
             display: flex;
@@ -24,22 +24,43 @@
             flex-wrap: wrap;
             min-height: 550px;
             min-width: 550px;
-            .card {
-                width: 200px;
-                border: 1px solid #f2f2f2;
-                padding: 20px;
-                border-radius: 10px;
-                height: 200px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                img {
-                    height: 100px;
-                }
-                p {
-                    font-size: 15px;
-                }
+        }
+        .card {
+            width: 200px;
+            border: 1px solid #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            img {
+                height: 100px;
+            }
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+        .card-small {
+            width: 200px;
+            border: 1px solid #f2f2f2;
+            padding: 15px;
+            border-radius: 10px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            img {
+                height: 80px;
+            }
+            p {
+                font-size: 15px;
+                text-align: center;
             }
         }
         app-progress-bar {
@@ -48,7 +69,7 @@
         .right {
             display: flex;
             align-items: start;
-            justify-content: start;
+            justify-content: space-between;
             flex-direction: column;
             width: 60%;
             margin-left: 30px;
@@ -62,7 +83,7 @@
             }
             .tech-stack {
                 font-size: 20px;
-                margin: 10px auto;
+                margin: 60px auto 10px;
                 color: #004a8b;
             }
         }
