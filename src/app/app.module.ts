@@ -14,7 +14,8 @@ import { SkillsComponent } from "./components/skills/skills.component";
 import { EducationComponent } from "./components/education/education.component";
 import { ContactMeComponent } from "./components/contact-me/contact-me.component";
 import { NgxTypedJsModule } from "ngx-typed-js";
-import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { ProgressBarComponent } from "./components/progress-bar/progress-bar.component";
+import { BlurOnHoverDirective } from "./directives/blur-on-hover.directive";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
     EducationComponent,
     ContactMeComponent,
     ProgressBarComponent,
+    BlurOnHoverDirective,
   ],
   imports: [
     BrowserModule,
