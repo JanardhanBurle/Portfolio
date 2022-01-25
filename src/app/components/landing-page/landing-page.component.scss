@@ -1,12 +1,15 @@
 :host {
     display: flex;
-    align-items: flex-end;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    .action-btns-mob {
+        display: none;
+    }
     .terminal {
         position: relative;
         width: 100%;
-        min-height: 550px;
+        min-height: 500px;
         border-radius: 10px;
         overflow: hidden;
         border: 1px solid #c6c6c6;
@@ -148,6 +151,9 @@
         justify-content: center;
     }
     @media only screen and (max-width: 600px) {
+        .action-btns-mob {
+            display: flex;
+        }
         .terminal {
             margin: 10px;
             .header {
