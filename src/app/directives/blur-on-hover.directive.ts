@@ -17,14 +17,16 @@ export class BlurOnHoverDirective {
     let part = this.el.nativeElement.parentElement.children;
     for (let item of part) {
       this.renderer.setStyle(item, "opacity", "0.2");
-      this.renderer.setStyle(item, "width", "170px");
-      this.renderer.setStyle(item, "height", "150px");
+      this.renderer.setStyle(item, "transform", "scale(0.9)");
       console.log(item.id);
     }
     this.renderer.setStyle(this.el.nativeElement, "opacity", "1");
-    this.renderer.setStyle(this.el.nativeElement, "width", "220px");
-    this.renderer.setStyle(this.el.nativeElement, "height", "220px");
-    this.renderer.setStyle(this.el.nativeElement, "transition", "0.3s");
+    this.renderer.setStyle(this.el.nativeElement, "transform", "scale(1.05)");
+    this.renderer.setStyle(
+      this.el.nativeElement,
+      "transition",
+      "all .2s ease-in-out"
+    );
     this.renderer.setStyle(
       this.el.nativeElement,
       "box-shadow",
@@ -36,8 +38,7 @@ export class BlurOnHoverDirective {
     let part = this.el.nativeElement.parentElement.children;
     for (let item of part) {
       this.renderer.setStyle(item, "opacity", "1");
-      this.renderer.setStyle(item, "width", "200px");
-      this.renderer.setStyle(item, "height", "200px");
+      this.renderer.setStyle(item, "transform", "scale(1)");
       this.renderer.setStyle(item, "box-shadow", "none");
     }
   }

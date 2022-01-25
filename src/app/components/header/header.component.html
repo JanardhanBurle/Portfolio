@@ -9,12 +9,27 @@
                 <span>Frontend Developer 👨‍💻</span>
             </div>
         </div>
-
+    </div>
+    <div class="menu-btn" (click)="hideMenu=!hideMenu;">
+        <i class="las la-ellipsis-v"></i>
     </div>
     <div class="toolbar" role="banner">
         <ng-container *ngFor="let router of routerLinks">
             <div class="router-link">
                 <a class="title" href="#{{router.path}}" title="{{router.label}}">
+                    {{router.label}}
+                 </a>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+
+<div *ngIf="!hideMenu" class="floating-menu">
+    <div class="menu-items">
+        <ng-container *ngFor="let router of routerLinks">
+            <div class="router-link">
+                <a class="title" href="#{{router.path}}" (click)="hideMenu=!hideMenu;" title="{{router.label}}">
                     {{router.label}}
                  </a>
             </div>

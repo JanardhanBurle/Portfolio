@@ -16,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        flex-wrap: wrap;
         margin: 25px 0;
         .left {
             width: 40%;
@@ -71,7 +72,7 @@
             align-items: start;
             justify-content: space-between;
             flex-direction: column;
-            width: 60%;
+            width: 50%;
             margin-left: 30px;
             .title {
                 font-size: 32px;
@@ -83,8 +84,20 @@
             }
             .tech-stack {
                 font-size: 20px;
-                margin: 60px auto 10px;
+                margin: 35px auto 10px;
                 color: #004a8b;
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .row {
+            .left {
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                min-height: 550px;
+                min-width: 0;
             }
         }
     }

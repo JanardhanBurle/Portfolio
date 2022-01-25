@@ -51,6 +51,7 @@ declare var Typed: any;
 export class LandingPageComponent implements OnInit, AfterViewInit {
   constructor() {}
   @ViewChild("htmlContent") htmlContent: any;
+  @ViewChild("htmlContentMob") htmlContentMob: any;
   bounceDivState = "initial";
   showContent = false;
   ngOnInit(): void {
@@ -58,8 +59,16 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    var typed = new Typed(".intro", {
+    new Typed(".intro", {
       strings: [this.htmlContent.nativeElement.innerHTML],
+      typeSpeed: 15,
+      backSpeed: 5,
+      showCursor: false,
+      loop: false,
+    });
+
+    new Typed(".intro-mob", {
+      strings: [this.htmlContentMob.nativeElement.innerHTML],
       typeSpeed: 15,
       backSpeed: 5,
       showCursor: false,

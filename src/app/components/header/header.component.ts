@@ -32,6 +32,7 @@ import { Router } from "@angular/router";
 export class HeaderComponent implements OnInit {
   constructor(private router: Router) {}
   bounceDivState = "initial";
+  hideMenu = true;
   routerLinks = [
     {
       path: "home",
