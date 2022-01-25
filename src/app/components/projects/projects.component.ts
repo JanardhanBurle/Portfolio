@@ -32,30 +32,34 @@ export class ProjectsComponent implements OnInit {
 
   bounceDivState = "initial";
   showContent = false;
-  technology = [
+  projects = [
     {
-      label: "HTML",
-      progress: "95%",
+      imageUrl: "assets/images/portfolio.svg",
+      name: "My Portfolio Website",
+      description: "Angular / Firebase / AOS",
+      gitUrl: "https://github.com/JanardhanBurle/Portfolio",
+      webUrl: "https://janardhan-portfolio.web.app/",
     },
     {
-      label: "CSS",
-      progress: "90%",
+      imageUrl: "assets/images/resume.svg",
+      name: "My Resume Template",
+      description: "HTML5 / CSS3",
+      gitUrl: "https://github.com/JanardhanBurle/Resume",
+      webUrl: "http://192.168.10.13:4200/assets/files/resume.html",
     },
     {
-      label: "Javascript",
-      progress: "93%",
+      imageUrl: "assets/images/portfolio.svg",
+      name: "My Portfolio Website",
+      description: "Angular / Firebase / AOS",
+      gitUrl: "https://github.com/JanardhanBurle/Portfolio",
+      webUrl: "https://janardhan-portfolio.web.app/",
     },
     {
-      label: "Angular",
-      progress: "90%",
-    },
-    {
-      label: "Node Js",
-      progress: "87%",
-    },
-    {
-      label: "Flutter",
-      progress: "87%",
+      imageUrl: "assets/images/resume.svg",
+      name: "My Resume Template",
+      description: "HTML5 / CSS3",
+      gitUrl: "https://github.com/JanardhanBurle/Resume",
+      webUrl: "http://192.168.10.13:4200/assets/files/resume.html",
     },
   ];
   ngOnInit(): void {

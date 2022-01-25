@@ -1,4 +1,7 @@
 :host {
+    .floating-menu {
+        display: none;
+    }
     .header {
         display: flex;
         align-items: center;
@@ -51,6 +54,9 @@
                 }
             }
         }
+    }
+    .menu-btn {
+        display: none;
     }
     .toolbar {
         z-index: 21;
@@ -117,5 +123,78 @@
     .toolbar #twitter-logo:hover,
     .toolbar #youtube-logo:hover {
         opacity: 0.8;
+    }
+    @media only screen and (max-width: 600px) {
+        .floating-menu {
+            display: flex;
+            align-items: flex-end;
+            justify-content: right;
+            flex-direction: column;
+            position: absolute;
+            right: 0px;
+            transition: all .2s ease-in-out;
+            .menu-items {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 15px;
+                border: 1px solid #cfcfcf5e;
+                background: #FFF;
+                border-radius: 10px;
+                padding: 0 10px;
+                width: 150px;
+                transition: all .2s ease-in-out;
+                .router-link {
+                    text-decoration: none;
+                    width: 100%;
+                    border-bottom: 1px solid #ededed;
+                    padding: 10px;
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                .router-link:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+        .header {
+            padding: 10px;
+            .profile-section {
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+                .text {
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    margin-left: 15px;
+                    justify-content: space-around;
+                    line-height: 24px;
+                    .name {
+                        font-size: 22px;
+                    }
+                    .desc {
+                        font-size: 15px;
+                        color: #3a3a3a;
+                    }
+                }
+            }
+            .toolbar {
+                display: none;
+            }
+            .menu-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
