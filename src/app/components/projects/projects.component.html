@@ -1,10 +1,10 @@
 <div class="title">Portfolio</div>
-<div class="title-desc">Here are projects I've worked on recently.</div>
+<p>Here are projects I've worked on recently.</p>
 <div [@bounce]="bounceDivState" class="row">
     <ng-container *ngFor="let project of projects">
         <div data-aos="flip-left" class="card">
             <img alt="Profile" [src]="project.imageUrl" />
-            <div appBlurOnHover class="project-info">
+            <div class="project-info">
                 <div class="name">{{project.name}}</div>
                 <div class="desc">{{project.description}}</div>
                 <div class="btns">

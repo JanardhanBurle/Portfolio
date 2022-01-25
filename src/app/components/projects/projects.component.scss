@@ -6,6 +6,7 @@
     $glow-radius: 10px;
     $glow-color: #04bfff;
     font-family: 'Cairo', sans-serif;
+    padding: 10px;
     .title {
         text-align: center;
         font-size: 34px;
@@ -19,13 +20,13 @@
     }
     .row {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 25px 0;
         .card {
-            width: 47%;
-            border: 1px solid #f2f2f2;
+            width: 80%;
+            // border: 1px solid #f2f2f2;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
@@ -48,12 +49,13 @@
         }
         .card:hover {
             .project-info {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
+                position: absolute;
+                top: 0;
+                width: 93%;
+                height: 90%;
                 border-radius: 10px;
-                width: 100%;
+                background: #ffffffde;
+                padding: 20px;
                 .name {
                     font-size: 24px;
                     color: #004a8b;
@@ -78,14 +80,31 @@
             font-size: 24px;
             color: #004a8b;
         }
-        .project-info {
-            position: absolute;
-            top: 0;
-            width: 93%;
-            height: 90%;
-            border-radius: 10px;
-            background: #ffffffde;
-            padding: 20px;
+    }
+    @media only screen and (max-width: 600px) {
+        .title {
+            font-size: 24px;
+            color: #004a8b;
+            margin: 0;
+            text-align: start;
+        }
+        .row {
+            .card {
+                width: 100%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                cursor: pointer;
+                .project-info {
+                    display: none;
+                }
+                .project-info:hover {
+                    display: none;
+                }
+            }
         }
     }
 }

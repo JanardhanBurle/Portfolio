@@ -103,4 +103,22 @@
             }
         }
     }
+    @media only screen and (max-width: 600px) {
+        .progress-bar {
+            .glow::before {
+                background: none;
+                height: unset;
+                box-shadow: 0px 0px 5px #6c63ff, 0px 0px 5px #a49ff5;
+                z-index: -5;
+            }
+            .glow::after {
+                background: none;
+                height: unset;
+                width: calc(100% + 10px);
+                top: -10px;
+                left: -10px;
+                z-index: -3;
+            }
+        }
+    }
 }

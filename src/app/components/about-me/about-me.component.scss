@@ -91,14 +91,58 @@
     }
     @media only screen and (max-width: 600px) {
         .row {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 0;
             .left {
-                width: 40%;
+                width: 100%;
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
-                min-height: 550px;
+                min-height: 0px;
                 min-width: 0;
             }
+            .right {
+                width: 100%;
+                margin-left: 0;
+                .tech-stack {
+                    font-size: 18px;
+                    margin: 15px auto 5px;
+                    color: #004a8b;
+                }
+            }
+            .card,
+            .card-small {
+                width: 40%;
+                border: 1px solid #f2f2f2;
+                padding: 10px;
+                border-radius: 10px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                margin: 5px auto;
+                img {
+                    width: 75%;
+                    height: auto;
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .mob {
+            display: flex;
+            flex-direction: row;
+        }
+        .title {
+            font-size: 24px;
+            color: #004a8b;
+            margin-bottom: 0;
+            text-align: start;
         }
     }
 }
