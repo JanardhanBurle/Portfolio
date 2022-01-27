@@ -1,5 +1,5 @@
 <div class="title">Portfolio</div>
-<p>Here are projects I've worked on recently.</p>
+<p class="title-desc">Here are projects I've worked on recently.</p>
 <div [@bounce]="bounceDivState" class="row">
     <ng-container *ngFor="let project of projects">
         <div data-aos="flip-left" class="card">
@@ -8,15 +8,16 @@
                 <div class="name">{{project.name}}</div>
                 <div class="desc">{{project.description}}</div>
                 <div class="btns">
-                    <a data-aos="fade-left" class="btn btn-primary" target="_blank" [href]="project.gitUrl" tabindex="1">
+                    <a class="btn btn-primary" target="_blank" [href]="project.gitUrl" tabindex="1">
                         <i class="lab la-github"></i>
                         <span>View Code</span>
                     </a>
-                    <a data-aos="fade-left" class="btn btn-secondary" target="_blank" [href]="project.webUrl" tabindex="1">
+                    <a class="btn btn-secondary" target="_blank" [href]="project.webUrl" tabindex="1">
                         <span>Visit Website</span>
                         <i style="font-size: 18px;" class="las la-angle-right"></i>
                     </a>
                 </div>
+                <hr class="hr">
             </div>
         </div>
     </ng-container>
