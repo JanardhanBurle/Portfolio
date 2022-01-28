@@ -16,6 +16,11 @@ import { ContactMeComponent } from "./components/contact-me/contact-me.component
 import { NgxTypedJsModule } from "ngx-typed-js";
 import { ProgressBarComponent } from "./components/progress-bar/progress-bar.component";
 import { BlurOnHoverDirective } from "./directives/blur-on-hover.directive";
+import { LottieModule } from "ngx-lottie";
+
+export function playerFactory() {
+  return import(/* webpackChunkName: 'lottie-web' */ "lottie-web");
+}
 
 @NgModule({
   declarations: [
@@ -37,6 +42,7 @@ import { BlurOnHoverDirective } from "./directives/blur-on-hover.directive";
     AppRoutingModule,
     BrowserAnimationsModule,
     NgxTypedJsModule,
+    LottieModule.forRoot({ player: playerFactory }),
   ],
   providers: [],
   bootstrap: [AppComponent],

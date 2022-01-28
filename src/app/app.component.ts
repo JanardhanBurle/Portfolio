@@ -7,6 +7,7 @@ import {
   trigger,
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
+import { AnimationOptions } from "ngx-lottie";
 declare var AOS: any;
 @Component({
   selector: "app-root",
@@ -44,12 +45,17 @@ export class AppComponent implements OnInit {
   loading = true;
   bounceDivState = "initial";
   showContent = false;
-
+  options: AnimationOptions = {
+    path: "/assets/lottie/down_arrow.json",
+  };
+  styles: Partial<CSSStyleDeclaration> = {
+    color: "grey",
+  };
   ngOnInit(): void {
     AOS.init({ duration: 1200 });
     this.bounceDivState = "active";
     setTimeout(() => {
       this.loading = false;
-    }, 0);
+    }, 1500);
   }
 }
