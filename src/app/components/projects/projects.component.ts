@@ -45,21 +45,7 @@ export class ProjectsComponent implements OnInit {
       name: "My Resume Template",
       description: "HTML5 / CSS3",
       gitUrl: "https://github.com/JanardhanBurle/Resume",
-      webUrl: "http://192.168.10.13:4200/assets/files/resume.html",
-    },
-    {
-      imageUrl: "assets/images/portfolio.svg",
-      name: "My Portfolio Website",
-      description: "Angular / Firebase / AOS",
-      gitUrl: "https://github.com/JanardhanBurle/Portfolio",
-      webUrl: "https://janardhan-portfolio.web.app/",
-    },
-    {
-      imageUrl: "assets/images/resume.svg",
-      name: "My Resume Template",
-      description: "HTML5 / CSS3",
-      gitUrl: "https://github.com/JanardhanBurle/Resume",
-      webUrl: "http://192.168.10.13:4200/assets/files/resume.html",
+      webUrl: "/assets/files/resume.html",
     },
   ];
   ngOnInit(): void {

@@ -5,9 +5,9 @@
         <div data-aos="flip-left" class="card">
             <img alt="Profile" [src]="project.imageUrl" />
             <div class="project-info">
-                <div class="name">{{project.name}}</div>
-                <div class="desc">{{project.description}}</div>
-                <div class="btns">
+                <div data-aos="fade-up" class="name">{{project.name}}</div>
+                <div data-aos="fade-up" class="desc">{{project.description}}</div>
+                <div data-aos="fade-up" class="btns">
                     <a class="btn btn-primary" target="_blank" [href]="project.gitUrl" tabindex="1">
                         <i class="lab la-github"></i>
                         <span>View Code</span>

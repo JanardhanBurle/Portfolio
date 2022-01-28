@@ -43,16 +43,16 @@ export class HeaderComponent implements OnInit {
       label: "About Me",
     },
     {
-      path: "experience",
-      label: "Experience",
+      path: "skills",
+      label: "Skills",
     },
     {
       path: "projects",
       label: "Projects",
     },
     {
-      path: "skills",
-      label: "Skills",
+      path: "experience",
+      label: "Experience",
     },
     {
       path: "education",

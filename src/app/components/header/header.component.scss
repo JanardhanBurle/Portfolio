@@ -15,7 +15,7 @@
             justify-content: space-between;
             color: #00498c;
             cursor: pointer;
-            img {
+            .profile-pic {
                 background: black;
                 border-radius: 50%;
                 height: 65px;
@@ -51,6 +51,9 @@
                 .desc {
                     font-size: 16px;
                     color: #3a3a3a;
+                    display: flex;
+                    align-items: center;
+                    justify-self: center;
                 }
             }
         }
@@ -163,7 +166,7 @@
         .header {
             padding: 10px;
             .profile-section {
-                img {
+                .profile-pic {
                     height: 50px;
                     width: 50px;
                 }
@@ -180,6 +183,9 @@
                     .desc {
                         font-size: 15px;
                         color: #3a3a3a;
+                        display: flex;
+                        align-items: center;
+                        justify-self: center;
                     }
                 }
             }
