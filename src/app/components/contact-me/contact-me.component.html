@@ -1,1 +1,66 @@
-<p>contact-me works!</p>
+<div class="title">Let's get in touch</div>
+<div [@bounce]="bounceDivState" class="row">
+    <div class="left">
+        <div class="sub-title">Where to find me</div>
+        <p>
+            Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:
+        </p>
+        <ul>
+            <li>
+                Email: ratko.solar@gmail.com
+            </li>
+            <li>
+                LinkedIn: ratko-solar
+            </li>
+            <li>
+                GitHub: ratkosolar
+            </li>
+        </ul>
+        <p>You can also use the contact form on this page.</p>
+    </div>
+    <div class="right">
+        <div class="mobile">
+            <span class="notche"></span>
+            <span class="power-btn"></span>
+            <span class="bar"></span>
+            <form data-aos="fade-right" [formGroup]="form" class="example-form">
+                <img src="assets/images/mail.svg" alt="">
+                <mat-form-field class="form-control" appearance="standard">
+                    <mat-label>Full Name</mat-label>
+                    <input type="text" matInput formControlName="fullName" placeholder="Full Name">
+                    <mat-error *ngIf="">
+                        Full Name is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field class="form-control" appearance="standard">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+                    <mat-error *ngIf="">
+                        Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="">
+                        Email is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="form-control" appearance="standard">
+                    <mat-label>Message</mat-label>
+                    <textarea formControlName="message" rows="6" matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+                    <mat-error *ngIf="">
+                        Email is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+
+                <div class="btn-submit">
+                    <a href="https://www.linkedin.com/in/its-me-janardhan-burle/" target="_blank" class="btn btn-primary" tabindex="0">
+                        <span>Send Message</span>
+                        <i class="las la-paper-plane"></i>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>

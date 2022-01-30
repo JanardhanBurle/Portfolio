@@ -12,19 +12,26 @@
         color: #004a8b;
         margin: 20px auto;
     }
+    .highlight {
+        color: #6c63ff;
+        font-size: 18px;
+        padding: 0 5px;
+    }
     .row {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 25px 0;
+        align-items: center;
         .left {
-            width: 40%;
+            width: 30%;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            min-height: 550px;
-            min-width: 550px;
+            img {
+                width: 100%;
+            }
         }
         .card {
             width: 200px;
@@ -72,7 +79,7 @@
             align-items: start;
             justify-content: space-between;
             flex-direction: column;
-            width: 50%;
+            width: 60%;
             margin-left: 30px;
             .title {
                 font-size: 32px;

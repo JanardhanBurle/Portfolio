@@ -33,6 +33,7 @@ p {
     transition: all 0.2s ease-in-out;
     line-height: 24px;
     font-size: 14px;
+    width: fit-content;
     svg,
     .icon {
         font-size: 25px;
@@ -71,4 +72,13 @@ p {
 
 .btn:hover {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+input mat-form-field {
+    font-family: 'Cairo', sans-serif;
+    .mat-form-field-wrapper {
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+            background-color: transparent;
+        }
+    }
 }

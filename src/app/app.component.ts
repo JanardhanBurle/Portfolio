@@ -56,6 +56,6 @@ export class AppComponent implements OnInit {
     this.bounceDivState = "active";
     setTimeout(() => {
       this.loading = false;
-    }, 1500);
+    }, 0);
   }
 }

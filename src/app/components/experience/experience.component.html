@@ -1,10 +1,24 @@
 <div class="title">Professional history</div>
-<!-- <p class="title-desc">Here are projects I've worked on recently.</p> -->
 <div [@bounce]="bounceDivState" class="row">
-    <div>It's been </div>
-    <div> 5 years.</div>
-    <div class="timer">
-        {{years}} Years {{months}} Months {{days}} Days.
+    <div class="exp-container">
+        <ng-container *ngFor="let entry of experience">
+            <div class="details" data-aos="fade-up">
+                <span class="line"></span>
+                <div class="header">
+                    <div class="role">{{entry.role}}</div>
+                    <div class="client">{{entry.client}}
+                        <img class="logo" [src]="entry.logo" alt="">
+                    </div>
+                </div>
+                <div class="date">{{entry.date}}</div>
+                <div class="location">{{entry.location}}</div>
+                <ul>
+                    <li *ngFor="let point of entry.points">{{point}}</li>
+                </ul>
+                <div *ngIf="entry.startDate" class="start-date">{{entry.startDate}}</div>
+            </div>
+        </ng-container>
+
     </div>
-    <img class="logo" alt="Profile" src="assets/images/tcs.svg" />
+
 </div>

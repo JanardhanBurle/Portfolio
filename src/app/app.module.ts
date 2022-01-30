@@ -17,7 +17,8 @@ import { NgxTypedJsModule } from "ngx-typed-js";
 import { ProgressBarComponent } from "./components/progress-bar/progress-bar.component";
 import { BlurOnHoverDirective } from "./directives/blur-on-hover.directive";
 import { LottieModule } from "ngx-lottie";
-
+import { MatInputModule } from "@angular/material/input";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 export function playerFactory() {
   return import(/* webpackChunkName: 'lottie-web' */ "lottie-web");
 }
@@ -42,6 +43,9 @@ export function playerFactory() {
     AppRoutingModule,
     BrowserAnimationsModule,
     NgxTypedJsModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     LottieModule.forRoot({ player: playerFactory }),
   ],
   providers: [],
