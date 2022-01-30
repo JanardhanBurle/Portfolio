@@ -1,0 +1,101 @@
+:host {
+    margin: 20px 0;
+    font-family: 'Cairo', sans-serif;
+    mat-form-field {
+        font-family: 'Cairo', sans-serif;
+    }
+    .title {
+        text-align: center;
+        font-size: 34px;
+        color: #004a8b;
+        margin: 20px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        .left {
+            width: 50%;
+            .sub-title {
+                font-size: 25px;
+                color: #6c63ff;
+            }
+        }
+        .right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .mobile {
+                display: flex;
+                flex-direction: column;
+                border: 15px solid #3f3d56;
+                border-radius: 60px;
+                height: 630px;
+                width: 290px;
+                position: relative;
+                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                form {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 20px;
+                    align-items: center;
+                    img {
+                        width: 50%;
+                        margin-bottom: 30px;
+                    }
+                    .form-control {
+                        width: 100%;
+                    }
+                }
+                .notche {
+                    height: 35px;
+                    background: #3f3d56;
+                    position: absolute;
+                    top: -15px;
+                    width: 150px;
+                    border-radius: 50px;
+                    left: 70px;
+                }
+                .power-btn {
+                    background: #3f3d56;
+                    height: 80px;
+                    width: 10px;
+                    position: absolute;
+                    right: -22px;
+                    top: 150px;
+                    border-radius: 5px;
+                }
+                .bar {
+                    height: 3px;
+                    background: #3f3d56;
+                    position: absolute;
+                    bottom: 10px;
+                    width: 100px;
+                    border-radius: 50px;
+                    left: 95px;
+                }
+                .btn-submit {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .title {
+            font-size: 24px;
+            color: #004a8b;
+            margin: 0;
+            text-align: start;
+        }
+        .title-desc {
+            text-align: left;
+        }
+        .row {}
+    }
+}

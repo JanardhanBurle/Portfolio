@@ -36,26 +36,32 @@ export class SkillsComponent implements OnInit {
     {
       label: "HTML",
       progress: "95%",
+      aos: "fade-up",
     },
     {
       label: "CSS",
       progress: "90%",
+      aos: "fade-up",
     },
     {
       label: "Javascript",
       progress: "93%",
+      aos: "fade-up",
     },
     {
       label: "Angular",
       progress: "90%",
+      aos: "fade-up",
     },
     {
       label: "Node Js",
       progress: "87%",
+      aos: "fade-up",
     },
     {
       label: "Flutter",
       progress: "87%",
+      aos: "fade-up",
     },
   ];
 

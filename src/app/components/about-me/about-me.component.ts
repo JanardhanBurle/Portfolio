@@ -6,6 +6,7 @@ import {
   style,
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
+import * as moment from "moment";
 
 @Component({
   selector: "app-about-me",
@@ -28,6 +29,8 @@ import { Component, OnInit } from "@angular/core";
   ],
 })
 export class AboutMeComponent implements OnInit {
+  years: any;
+  months: any;
   constructor() {}
 
   bounceDivState = "initial";
@@ -98,5 +101,10 @@ export class AboutMeComponent implements OnInit {
   ];
   ngOnInit(): void {
     this.bounceDivState = "active";
+    const duration = moment.duration(
+      moment(new Date()).diff(moment("2016-11-10 9:00:00"))
+    );
+    this.years = Math.round(duration.asYears());
+    this.months = Math.round((duration.asYears() - this.years) * 12);
   }
 }
