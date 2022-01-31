@@ -74,6 +74,14 @@ p {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
+.btn:disabled {
+    box-shadow: none;
+    background: #ffffff;
+    border: 2px solid #CCC;
+    cursor: not-allowed;
+    color: #CCC;
+}
+
 input mat-form-field {
     font-family: 'Cairo', sans-serif;
     .mat-form-field-wrapper {

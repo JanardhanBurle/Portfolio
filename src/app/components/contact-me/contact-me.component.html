@@ -5,25 +5,41 @@
         <p>
             Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:
         </p>
-        <ul>
-            <li>
-                Email: ratko.solar@gmail.com
-            </li>
-            <li>
-                LinkedIn: ratko-solar
-            </li>
-            <li>
-                GitHub: ratkosolar
-            </li>
-        </ul>
-        <p>You can also use the contact form on this page.</p>
+        <div class="options">
+            <img class="banner" src="assets/images/media-list.svg" alt="">
+            <div class="links">
+                <div class="link">
+                    <img class="icon" src="assets/images/google.svg" alt="">
+                    <a href="mailto:officemail.janardhan@email.com">officemail.janardhan@gmail.com</a>
+                </div>
+                <div class="link">
+                    <img class="icon" src="assets/images/linkedin-logo.svg" alt="">
+                    <a href="https://www.linkedin.com/in/its-me-janardhan-burle/">its-me-janardhan-burle</a>
+                </div>
+                <div class="link">
+                    <img class="icon" src="assets/images/stackoverflow.svg" alt="">
+                    <a href="https://stackoverflow.com/users/13928903/janardhan-burle?tab=profile">janardhan-burle</a>
+                </div>
+                <div class="link">
+                    <img class="icon" src="assets/images/insta.svg" alt="">
+                    <a href="">janardhan_burle</a>
+                </div>
+                <p>You can also use the contact form on this page.</p>
+            </div>
+
+        </div>
+
     </div>
     <div class="right">
-        <div class="mobile">
+        <div data-aos="flip-left" class="mobile">
             <span class="notche"></span>
             <span class="power-btn"></span>
+            <span class="vol-up"></span>
+            <span class="vol-down"></span>
+            <span class="notche-bar"></span>
+            <span class="notche-dot"></span>
             <span class="bar"></span>
-            <form data-aos="fade-right" [formGroup]="form" class="example-form">
+            <form data-aos="fade-down" [formGroup]="form" class="example-form">
                 <img src="assets/images/mail.svg" alt="">
                 <mat-form-field class="form-control" appearance="standard">
                     <mat-label>Full Name</mat-label>
@@ -52,12 +68,11 @@
                 </mat-form-field>
 
                 <div class="btn-submit">
-                    <a href="https://www.linkedin.com/in/its-me-janardhan-burle/" target="_blank" class="btn btn-primary" tabindex="0">
+                    <button [disabled]="form.invalid" class="btn btn-primary">
                         <span>Send Message</span>
                         <i class="las la-paper-plane"></i>
-                    </a>
+                    </button>
                 </div>
-
             </form>
         </div>
 

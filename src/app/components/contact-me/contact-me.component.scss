@@ -15,11 +15,53 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 50px auto;
+        align-items: center;
+        justify-content: center;
         .left {
             width: 50%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .options {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-between;
+                    height: 100%;
+                    width: 100%;
+                    .link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+                        margin: 10px;
+                        .icon {
+                            width: 35px;
+                        }
+                        a {
+                            font-size: 16px;
+                            text-decoration: none;
+                            margin-left: 15px;
+                            color: #004b8a;
+                        }
+                    }
+                }
+            }
             .sub-title {
-                font-size: 25px;
+                font-size: 28px;
                 color: #6c63ff;
+            }
+            .banner {
+                width: 45%;
             }
         }
         .right {
@@ -30,12 +72,12 @@
             .mobile {
                 display: flex;
                 flex-direction: column;
-                border: 15px solid #3f3d56;
+                border: 10px solid #3f3d56;
                 border-radius: 60px;
-                height: 630px;
+                height: 610px;
                 width: 290px;
                 position: relative;
-                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 5px 0 rgb(0 0 0 / 19%);
                 form {
                     height: 100%;
                     display: flex;
@@ -44,28 +86,63 @@
                     padding: 20px;
                     align-items: center;
                     img {
-                        width: 50%;
-                        margin-bottom: 30px;
+                        width: 100px;
                     }
                     .form-control {
                         width: 100%;
                     }
                 }
                 .notche {
-                    height: 35px;
+                    height: 30px;
                     background: #3f3d56;
                     position: absolute;
-                    top: -15px;
+                    top: -10px;
                     width: 150px;
                     border-radius: 50px;
                     left: 70px;
+                }
+                .vol-up {
+                    background: #3f3d56;
+                    height: 30px;
+                    width: 10px;
+                    position: absolute;
+                    left: -16px;
+                    top: 100px;
+                    border-radius: 5px;
+                }
+                .vol-down {
+                    background: #3f3d56;
+                    height: 30px;
+                    width: 10px;
+                    position: absolute;
+                    left: -16px;
+                    top: 145px;
+                    border-radius: 5px;
+                }
+                .notche-bar {
+                    height: 2px;
+                    background: #fff;
+                    position: absolute;
+                    top: 5px;
+                    width: 45px;
+                    border-radius: 50px;
+                    left: 115px;
+                }
+                .notche-dot {
+                    height: 5px;
+                    background: #fff;
+                    position: absolute;
+                    top: 3px;
+                    width: 5px;
+                    border-radius: 50px;
+                    right: 115px;
                 }
                 .power-btn {
                     background: #3f3d56;
                     height: 80px;
                     width: 10px;
                     position: absolute;
-                    right: -22px;
+                    right: -16px;
                     top: 150px;
                     border-radius: 5px;
                 }
@@ -96,6 +173,159 @@
         .title-desc {
             text-align: left;
         }
-        .row {}
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            align-items: center;
+            justify-content: center;
+            .left {
+                width: 100%;
+                align-items: start;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .options {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    .links {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: space-between;
+                        height: 100%;
+                        width: 100%;
+                        margin-bottom: 30px;
+                        .link {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: row;
+                            margin: 10px;
+                            .icon {
+                                width: 35px;
+                            }
+                            a {
+                                font-size: 16px;
+                                text-decoration: none;
+                                margin-left: 15px;
+                                color: #004b8a;
+                            }
+                        }
+                    }
+                }
+                .sub-title {
+                    font-size: 20px;
+                    color: #6c63ff;
+                }
+                .banner {
+                    display: none;
+                }
+            }
+            .right {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .mobile {
+                    display: flex;
+                    flex-direction: column;
+                    border: 10px solid #3f3d56;
+                    border-radius: 60px;
+                    height: 610px;
+                    width: 290px;
+                    position: relative;
+                    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 5px 0 rgb(0 0 0 / 19%);
+                    form {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 20px;
+                        align-items: center;
+                        img {
+                            width: 100px;
+                        }
+                        .form-control {
+                            width: 100%;
+                        }
+                    }
+                    .notche {
+                        height: 30px;
+                        background: #3f3d56;
+                        position: absolute;
+                        top: -10px;
+                        width: 150px;
+                        border-radius: 50px;
+                        left: 70px;
+                    }
+                    .vol-up {
+                        background: #3f3d56;
+                        height: 30px;
+                        width: 10px;
+                        position: absolute;
+                        left: -16px;
+                        top: 100px;
+                        border-radius: 5px;
+                    }
+                    .vol-down {
+                        background: #3f3d56;
+                        height: 30px;
+                        width: 10px;
+                        position: absolute;
+                        left: -16px;
+                        top: 145px;
+                        border-radius: 5px;
+                    }
+                    .notche-bar {
+                        height: 2px;
+                        background: #fff;
+                        position: absolute;
+                        top: 5px;
+                        width: 45px;
+                        border-radius: 50px;
+                        left: 115px;
+                    }
+                    .notche-dot {
+                        height: 5px;
+                        background: #fff;
+                        position: absolute;
+                        top: 3px;
+                        width: 5px;
+                        border-radius: 50px;
+                        right: 115px;
+                    }
+                    .power-btn {
+                        background: #3f3d56;
+                        height: 80px;
+                        width: 10px;
+                        position: absolute;
+                        right: -16px;
+                        top: 150px;
+                        border-radius: 5px;
+                    }
+                    .bar {
+                        height: 3px;
+                        background: #3f3d56;
+                        position: absolute;
+                        bottom: 10px;
+                        width: 100px;
+                        border-radius: 50px;
+                        left: 95px;
+                    }
+                    .btn-submit {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
     }
 }
