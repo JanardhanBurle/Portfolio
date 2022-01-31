@@ -23,6 +23,7 @@
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
+                    flex-wrap: wrap;
                     .role {
                         background: #f1fafe;
                         color: #0175b0;
@@ -131,6 +132,57 @@
         .title-desc {
             text-align: left;
         }
-        .row {}
+        .row {
+            margin: 25px 0;
+            .exp-container {
+                .details {
+                    position: relative;
+                    transition: all 0.5s linear;
+                    padding-left: 20px;
+                    margin-left: 20px;
+                    .date {
+                        position: absolute;
+                        left: -70px;
+                        top: 0;
+                        font-size: 15px;
+                        text-align: center;
+                        width: 110px;
+                        transform: rotate( -90deg);
+                    }
+                    .start-date {
+                        position: absolute;
+                        left: -70px;
+                        bottom: 0px;
+                        font-size: 15px;
+                        text-align: center;
+                        width: 110px;
+                        transform: rotate( -90deg);
+                    }
+                    .header {
+                        .role {
+                            background: none;
+                            margin-bottom: 10px;
+                            font-size: 18px;
+                        }
+                        .client {
+                            width: 100%;
+                            font-size: 17px;
+                            .logo {
+                                height: 20px;
+                                margin: 0 0 0 20px;
+                                background: #0175b0;
+                                padding: 5px 10px;
+                                border-radius: 50px;
+                            }
+                        }
+                    }
+                }
+                .details:first-child {
+                    .date {
+                        top: 10px;
+                    }
+                }
+            }
+        }
     }
 }
