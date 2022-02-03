@@ -39,19 +39,28 @@
             <span class="notche-bar"></span>
             <span class="notche-dot"></span>
             <span class="bar"></span>
-            <form data-aos="fade-down" [formGroup]="form" class="example-form">
+
+            <div class="success-sec" *ngIf="status=='SUCCESS'">
+                <ng-lottie containerClass="moving-box another-class" [options]="options">
+                </ng-lottie>
+                <span>Thank you!</span>
+            </div>
+
+            <ng-lottie *ngIf="status==='PENDING'" height="70%" containerClass="moving-box another-class" [options]="optionsLoading">
+            </ng-lottie>
+            <form *ngIf="status==='INIT'" data-aos="fade-down" [formGroup]="form" class="example-form">
                 <img src="assets/images/mail.svg" alt="">
                 <mat-form-field class="form-control" appearance="standard">
                     <mat-label>Full Name</mat-label>
                     <input type="text" matInput formControlName="fullName" placeholder="Full Name">
-                    <mat-error *ngIf="">
+                    <mat-error *ngIf="form.controls['fullName'].invalid">
                         Full Name is <strong>required</strong>
                     </mat-error>
                 </mat-form-field>
                 <mat-form-field class="form-control" appearance="standard">
                     <mat-label>Email</mat-label>
                     <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
-                    <mat-error *ngIf="">
+                    <mat-error *ngIf="form.controls['email'].invalid">
                         Please enter a valid email address
                     </mat-error>
                     <mat-error *ngIf="">
@@ -62,13 +71,13 @@
                 <mat-form-field class="form-control" appearance="standard">
                     <mat-label>Message</mat-label>
                     <textarea formControlName="message" rows="6" matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
-                    <mat-error *ngIf="">
+                    <mat-error *ngIf="form.controls['message'].invalid">
                         Email is <strong>required</strong>
                     </mat-error>
                 </mat-form-field>
 
                 <div class="btn-submit">
-                    <button [disabled]="form.invalid" class="btn btn-primary">
+                    <button [disabled]="form.invalid" (click)="submitForm()" class="btn btn-primary">
                         <span>Send Message</span>
                         <i class="las la-paper-plane"></i>
                     </button>

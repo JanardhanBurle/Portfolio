@@ -19,6 +19,7 @@ import { BlurOnHoverDirective } from "./directives/blur-on-hover.directive";
 import { LottieModule } from "ngx-lottie";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 export function playerFactory() {
   return import(/* webpackChunkName: 'lottie-web' */ "lottie-web");
 }
@@ -45,6 +46,7 @@ export function playerFactory() {
     NgxTypedJsModule,
     MatInputModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     LottieModule.forRoot({ player: playerFactory }),
   ],
