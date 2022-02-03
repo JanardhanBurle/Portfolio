@@ -41,12 +41,9 @@ export class ContactMeComponent implements OnInit {
   status: string = "";
   constructor(private fb: FormBuilder, private http: HttpService) {
     this.form = this.fb.group({
-      fullName: ["JANARDHAN", Validators.required],
-      email: [
-        "officemail.janardhan@gmail.com",
-        [Validators.required, Validators.email],
-      ],
-      message: ["test", Validators.required],
+      fullName: [null, Validators.required],
+      email: [null, [Validators.required, Validators.email]],
+      message: [null, Validators.required],
     });
   }
   emailFormControl = new FormControl("", [
