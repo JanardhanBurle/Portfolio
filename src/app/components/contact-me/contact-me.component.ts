@@ -12,6 +12,8 @@ import {
   FormGroup,
   Validators,
 } from "@angular/forms";
+import { AnimationOptions } from "ngx-lottie";
+import { HttpService } from "src/app/services/http.service";
 
 @Component({
   selector: "app-contact-me",
@@ -36,18 +38,40 @@ import {
 export class ContactMeComponent implements OnInit {
   bounceDivState = "initial";
   form: FormGroup;
-  constructor(private fb: FormBuilder) {
+  status: string = "";
+  constructor(private fb: FormBuilder, private http: HttpService) {
     this.form = this.fb.group({
-      fullName: [null, Validators.required],
-      email: [null, [Validators.required, Validators.email]],
-      message: [null, Validators.required],
+      fullName: ["JANARDHAN", Validators.required],
+      email: [
+        "officemail.janardhan@gmail.com",
+        [Validators.required, Validators.email],
+      ],
+      message: ["test", Validators.required],
     });
   }
   emailFormControl = new FormControl("", [
     Validators.required,
     Validators.email,
   ]);
+  options: AnimationOptions = {
+    path: "/assets/lottie/contact-success.json",
+    loop: false,
+  };
+  optionsLoading: AnimationOptions = {
+    path: "/assets/lottie/loading.json",
+  };
   ngOnInit(): void {
     this.bounceDivState = "active";
+    this.status = "INIT";
+  }
+
+  submitForm() {
+    this.status = "PENDING";
+    this.http.post(this.form.value).subscribe((res: any) => {
+      console.log(res.toString());
+      if ((res.status = 200)) {
+        this.status = "SUCCESS";
+      }
+    });
   }
 }
