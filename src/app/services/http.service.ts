@@ -17,7 +17,7 @@ export class HttpService {
 
   post(request: any) {
     return this.http
-      .post("http://localhost:3000/api/mail", request, {
+      .post("https://reachout-to-me.herokuapp.com/api/mail", request, {
         headers: this.httpHeaders,
         responseType: "json",
       })
