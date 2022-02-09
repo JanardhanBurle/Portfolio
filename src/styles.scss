@@ -1,5 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    /* Colors */
+    --foreground-default: #00498c;
+    --foreground-secondary: #6c63ff;
+    --foreground-tertiary: #000;
+    --foreground-quaternary: #f4faff;
+    --foreground-light: #41474d;
+    --background-default: #FFF;
+    --background-secondary: #a3b9cc;
+    --background-tertiary: #5c7d99;
+    --background-light: #ffffff;
+    --primary-default: #5dfdcb;
+    --primary-dark: #24b286;
+    --primary-light: #b2ffe7;
+    --error-default: #ef3e36;
+    --error-dark: #800600;
+    --error-light: #ffcecc;
+    /* Shadows */
+    --background-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
 :host {
     font-size: 14px;
     color: #333;
@@ -11,6 +32,8 @@
 body {
     font-family: 'Cairo', sans-serif;
     margin: 0;
+    background: var(--background-default);
+    ;
 }
 
 p {
@@ -47,7 +70,8 @@ p {
 }
 
 .btn-primary {
-    background: #ffffff;
+    background: var(--background-default);
+    ;
     border: 2px solid #0a66c2;
     cursor: pointer;
     color: #0a66c2;
@@ -59,34 +83,30 @@ p {
 }
 
 .btn-secondary {
-    background: #ffffff;
+    background: var(--background-default);
     border: 2px solid #6c63ff;
     cursor: pointer;
     color: #6c63ff;
-}
-
-.btn-secondary:hover {
-    color: #FFF;
-    background: #6c63ff;
-}
-
-.btn:hover {
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-}
-
-.btn:disabled {
-    box-shadow: none;
-    background: #ffffff;
-    border: 2px solid #CCC;
-    cursor: not-allowed;
-    color: #CCC;
-}
-
-input mat-form-field {
-    font-family: 'Cairo', sans-serif;
-    .mat-form-field-wrapper {
-        .mat-form-field-appearance-fill .mat-form-field-flex {
-            background-color: transparent;
+    .btn-secondary:hover {
+        color: #FFF;
+        background: #6c63ff;
+    }
+    .btn:hover {
+        box-shadow: var(--background-shadow);
+    }
+    .btn:disabled {
+        box-shadow: none;
+        background: var(--background-default);
+        border: 2px solid #CCC;
+        cursor: not-allowed;
+        color: #CCC;
+    }
+    input mat-form-field {
+        font-family: 'Cairo', sans-serif;
+        .mat-form-field-wrapper {
+            .mat-form-field-appearance-fill .mat-form-field-flex {
+                background-color: transparent;
+            }
         }
     }
 }

@@ -13,7 +13,7 @@
       rx="40.92"
       ry="7.87"
       transform="translate(77.495 168.244)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
     />
     <ellipse
       id="Ellipse_104"
@@ -90,7 +90,7 @@
       data-name="Path 968"
       d="M342.15,582.56a22.267,22.267,0,0,0,1.77-2.62l-12.51-2.05,13.53.1a22.87,22.87,0,0,0,.44-18.08l-18.16,9.42L344,557a22.82,22.82,0,1,0-37.69,25.54,22.518,22.518,0,0,0-2.6,4.16l16.24,8.44-17.32-5.82a22.78,22.78,0,0,0,3.68,21.43,22.82,22.82,0,1,0,35.87,0,22.82,22.82,0,0,0,0-28.21Z"
       transform="translate(-206.134 -493.429)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
     />
     <path
       id="Path_969"
@@ -107,7 +107,7 @@
       rx="40.92"
       ry="7.87"
       transform="translate(899.08 1047.521)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
     />
     <ellipse
       id="Ellipse_112"
@@ -184,7 +184,7 @@
       data-name="Path 970"
       d="M1027.15,655.56a22.267,22.267,0,0,0,1.77-2.62l-12.51-2.05,13.53.1a22.871,22.871,0,0,0,.44-18.08l-18.16,9.42L1029,630a22.82,22.82,0,1,0-37.69,25.54,22.521,22.521,0,0,0-2.6,4.16l16.24,8.44-17.32-5.82a22.78,22.78,0,0,0,3.68,21.43,22.82,22.82,0,1,0,35.87,0,22.82,22.82,0,0,0,0-28.21Z"
       transform="translate(-70 298.601)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
     />
     <path
       id="Path_971"
@@ -200,7 +200,7 @@
       cy="15.27"
       r="15.27"
       transform="translate(389.16 78.42)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -210,7 +210,7 @@
       cy="25.6"
       r="25.6"
       transform="translate(433.46 0)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -220,7 +220,7 @@
       cy="25.6"
       r="25.6"
       transform="translate(399.58 208.773)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -230,7 +230,7 @@
       cy="15.27"
       r="15.27"
       transform="translate(948.66 435.212)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -240,7 +240,7 @@
       cy="25.6"
       r="25.6"
       transform="translate(883.69 309.243)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -250,7 +250,7 @@
       cy="25.6"
       r="25.6"
       transform="translate(917.58 518.016)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -260,7 +260,7 @@
       cy="8.65"
       r="8.65"
       transform="translate(92.12 488.061)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -270,7 +270,7 @@
       cy="14.5"
       r="14.5"
       transform="translate(1597.35 163.152)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -280,7 +280,7 @@
       cy="14.5"
       r="14.5"
       transform="translate(1527.95 200.414)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -290,7 +290,7 @@
       cy="8.65"
       r="8.65"
       transform="translate(733.12 402.523)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -300,7 +300,7 @@
       cy="14.5"
       r="14.5"
       transform="translate(764.35 341.495)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -310,7 +310,7 @@
       cy="14.5"
       r="14.5"
       transform="translate(694.95 378.757)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -320,7 +320,7 @@
       cy="36.25"
       r="36.25"
       transform="translate(180.33 180.87)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -330,7 +330,7 @@
       cy="20.92"
       r="20.92"
       transform="translate(1876.66 138.74)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <circle
@@ -340,7 +340,7 @@
       cy="20.92"
       r="20.92"
       transform="translate(2083.66 365.918)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
       opacity="0.1"
     />
     <ellipse
@@ -376,7 +376,7 @@
     d="M-20061.99-6997.907s117.654-19.582,212.785,117.728,71.6,344.373,222.977,533.879c97.184,121.663,272.367,163.527,378.357,225.405,10.5,6.129,23.738,13.292,30.295,16.831,28.979,15.641,16.17,5.322,52.555,31.328"
     transform="translate(20123.5 7430.86)"
     fill="none"
-    stroke="#00498c"
+    stroke="var(--foreground-default)"
     stroke-width="5"
   />
   <path
@@ -427,7 +427,7 @@
       data-name="Path 974"
       d="M1014.185,680.209a23.812,23.812,0,0,0-2.35-10.362l-12.693,4.14,11.143-6.871a21.73,21.73,0,0,0-16.482-9.854,23.455,23.455,0,0,0-1.713-2.374l-18.228,5.95,14.952-9.215a21.124,21.124,0,0,0-20.391-3.536,22.593,22.593,0,0,0-14.147,15.8l15.614,18.852-16.938-12.851a23.7,23.7,0,0,0-6.888,29.181c4.92,10.172,16.2,15.03,26.521,11.415a21.1,21.1,0,0,0,14.045.4,21.177,21.177,0,0,0,18.475-4.523,23.445,23.445,0,0,0,8.206-17.936c0-.5,0-1.006-.048-1.509a24.018,24.018,0,0,0,.921-6.71Z"
       transform="translate(446.814 471.687)"
-      fill="#6c63ff"
+      fill="var(--foreground-secondary)"
     />
     <rect
       id="Rectangle_490"
@@ -518,7 +518,7 @@
     cy="15.27"
     r="15.27"
     transform="translate(1229.16 876.475)"
-    fill="#6c63ff"
+    fill="var(--foreground-secondary)"
     opacity="0.1"
   />
   <circle
@@ -528,7 +528,7 @@
     cy="25.6"
     r="25.6"
     transform="translate(1273.461 798.055)"
-    fill="#6c63ff"
+    fill="var(--foreground-secondary)"
     opacity="0.1"
   />
   <circle
@@ -538,7 +538,7 @@
     cy="25.6"
     r="25.6"
     transform="translate(1239.58 1006.828)"
-    fill="#6c63ff"
+    fill="var(--foreground-secondary)"
     opacity="0.1"
   />
   <circle
@@ -548,7 +548,7 @@
     cy="36.25"
     r="36.25"
     transform="translate(1020.33 978.925)"
-    fill="#6c63ff"
+    fill="var(--foreground-secondary)"
     opacity="0.1"
   />
   <path

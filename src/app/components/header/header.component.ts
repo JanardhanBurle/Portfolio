@@ -8,6 +8,7 @@ import {
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { ThemeService } from "src/app/Theme/theme.service";
 
 @Component({
   selector: "app-header",
@@ -30,37 +31,39 @@ import { Router } from "@angular/router";
   ],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private themeService: ThemeService) {}
   bounceDivState = "initial";
   hideMenu = true;
   routerLinks = [
     {
-      path: "home",
-      label: "Home",
-    },
-    {
       path: "about-me",
       label: "About Me",
+      icon: "la-user-graduate",
     },
     {
       path: "skills",
       label: "Skills",
+      icon: "la-list-alt",
     },
     {
       path: "projects",
       label: "Projects",
+      icon: "la-project-diagram",
     },
     {
       path: "experience",
       label: "Experience",
+      icon: "la-business-time",
     },
     {
       path: "education",
       label: "Education",
+      icon: "la-school",
     },
     {
       path: "contact-me",
       label: "Contact Me",
+      icon: "la-id-card-alt",
     },
   ];
   ngOnInit(): void {
@@ -69,5 +72,13 @@ export class HeaderComponent implements OnInit {
 
   gotToHome() {
     this.router.navigate(["home"]);
+  }
+
+  changeTheme() {
+    if (this.themeService.isDarkTheme()) {
+      this.themeService.setLightTheme();
+    } else {
+      this.themeService.setDarkTheme();
+    }
   }
 }

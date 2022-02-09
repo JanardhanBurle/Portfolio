@@ -30,7 +30,7 @@ export class BlurOnHoverDirective {
     this.renderer.setStyle(
       this.el.nativeElement,
       "box-shadow",
-      "0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)"
+      "var(--background-shadow)"
     );
   }
 

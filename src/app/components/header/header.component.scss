@@ -8,12 +8,13 @@
         justify-content: space-between;
         font-family: "Cairo", sans-serif;
         padding: 10px 100px;
-        background: #FFF;
+        background: var(--background-default);
+        ;
         .profile-section {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            color: #00498c;
+            color: var(--foreground-default);
             cursor: pointer;
             .profile-pic {
                 background: black;
@@ -78,9 +79,25 @@
             cursor: pointer;
         }
         .title {
-            color: #000;
+            color: var(--foreground-tertiary);
             position: relative;
             text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .las {
+                font-family: 'Line Awesome Free';
+                font-weight: 900;
+                font-size: 22px;
+                font-weight: bold;
+                color: var(--foreground-default);
+                margin-right: 5px;
+            }
+            span {
+                overflow: hidden;
+                /* Hide the element content, while height = 0 */
+                transition: height 0ms 400ms, opacity 400ms 0ms;
+            }
         }
         .title::after {
             position: absolute;
@@ -96,6 +113,13 @@
             width: 100%;
             left: 0;
         }
+        .title:hover {
+            span {
+                height: auto;
+                opacity: 1;
+                transition: height 0ms 0ms, opacity 600ms 0ms;
+            }
+        }
         .activated-route::after {
             position: absolute;
             content: "";
@@ -108,12 +132,12 @@
         }
     }
     .toolbar-bg {
-        background-color: #00498c !important;
+        background-color: var(--foreground-default) !important;
     }
     .toolbar img {
         margin: 0 16px 0 0;
         border-radius: 50%;
-        background: #FFF;
+        background: var(--background-default);
     }
     .toolbar #twitter-logo {
         height: 40px;
@@ -143,12 +167,12 @@
                 flex-direction: column;
                 margin: 0 15px;
                 border: 1px solid #cfcfcf5e;
-                background: #FFF;
+                background: var(--background-default);
                 border-radius: 10px;
                 padding: 0 10px;
                 width: 150px;
                 transition: all .2s ease-in-out;
-                box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 5px 0 rgb(0 0 0 / 19%);
+                box-shadow: var(--background-shadow);
                 .router-link {
                     text-decoration: none;
                     width: 100%;

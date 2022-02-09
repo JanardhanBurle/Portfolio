@@ -4,7 +4,7 @@
     .title {
         text-align: center;
         font-size: 34px;
-        color: #004a8b;
+        color: var(--foreground-default);
         margin: 20px;
     }
     .row {
@@ -99,14 +99,14 @@
                 width: 15px;
                 height: 15px;
                 position: absolute;
-                background: #6c63ff;
+                background: var(--foreground-secondary);
                 border-radius: 50%;
                 left: 0;
                 z-index: 1;
             }
             .details:first-child:before,
             .details:last-child:after {
-                background: #6c63ff
+                background: var(--foreground-secondary)
             }
             .details:before,
             .details:after {
@@ -125,7 +125,7 @@
     @media only screen and (max-width: 600px) {
         .title {
             font-size: 24px;
-            color: #004a8b;
+            color: var(--foreground-default);
             margin: 0;
             text-align: start;
         }

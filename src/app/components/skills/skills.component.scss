@@ -9,7 +9,7 @@
     .title {
         text-align: center;
         font-size: 34px;
-        color: #004a8b;
+        color: var(--foreground-default);
         margin: 20px auto;
     }
     .row {
@@ -76,7 +76,7 @@
             margin-left: 30px;
             .title {
                 font-size: 32px;
-                color: #004a8b;
+                color: var(--foreground-default);
             }
             .link {
                 color: #004b8a;
@@ -85,7 +85,7 @@
             .tech-stack {
                 font-size: 20px;
                 margin: 35px auto 10px;
-                color: #004a8b;
+                color: var(--foreground-default);
             }
         }
     }
@@ -108,7 +108,7 @@
                 .tech-stack {
                     font-size: 18px;
                     margin: 15px auto 5px;
-                    color: #004a8b;
+                    color: var(--foreground-default);
                 }
             }
             .card,
@@ -140,7 +140,7 @@
         }
         .title {
             font-size: 24px;
-            color: #004a8b;
+            color: var(--foreground-default);
             margin-bottom: 0;
             text-align: start;
         }
