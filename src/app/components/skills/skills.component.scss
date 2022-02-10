@@ -18,7 +18,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 25px 0;
-        .left {
+        .right {
             width: 40%;
             display: flex;
             justify-content: space-around;
@@ -28,7 +28,7 @@
         }
         .card {
             width: 200px;
-            border: 1px solid #f2f2f2;
+            border: 1px solid var(--border-color-primary);
             padding: 20px;
             border-radius: 10px;
             height: 200px;
@@ -47,7 +47,7 @@
         }
         .card-small {
             width: 200px;
-            border: 1px solid #f2f2f2;
+            border: 1px solid var(--border-color-primary);
             padding: 15px;
             border-radius: 10px;
             height: 200px;
@@ -67,25 +67,28 @@
         app-progress-bar {
             width: 100%;
         }
-        .right {
+        .left {
             display: flex;
             align-items: start;
             justify-content: space-between;
             flex-direction: column;
             width: 50%;
             margin-left: 30px;
-            .title {
-                font-size: 32px;
-                color: var(--foreground-default);
-            }
-            .link {
-                color: #004b8a;
-                text-decoration: none;
-            }
-            .tech-stack {
-                font-size: 20px;
-                margin: 35px auto 10px;
-                color: var(--foreground-default);
+            .item {
+                width: 100%;
+                .title {
+                    font-size: 32px;
+                    color: var(--foreground-default);
+                }
+                .link {
+                    color: var(--foreground-default);
+                    text-decoration: none;
+                }
+                .tech-stack {
+                    font-size: 20px;
+                    margin: 35px auto 10px;
+                    color: var(--foreground-default);
+                }
             }
         }
     }
@@ -94,7 +97,7 @@
             display: flex;
             flex-direction: column-reverse;
             margin: 0;
-            .left {
+            .right {
                 width: 100%;
                 display: flex;
                 justify-content: space-around;
@@ -102,7 +105,7 @@
                 min-height: 0px;
                 min-width: 0;
             }
-            .right {
+            .left {
                 width: 100%;
                 margin-left: 0;
                 .tech-stack {
@@ -114,7 +117,7 @@
             .card,
             .card-small {
                 width: 40%;
-                border: 1px solid #f2f2f2;
+                border: 1px solid var(--border-color-primary);
                 padding: 10px;
                 border-radius: 10px;
                 height: auto;

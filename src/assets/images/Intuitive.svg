@@ -12,7 +12,7 @@
     cy="169"
     r="169"
     transform="translate(77.148 17.839)"
-    fill="#f2f2f2"
+    fill="var(--border-color-primary)"
   />
   <circle
     id="Ellipse_43"
@@ -21,7 +21,7 @@
     cy="32"
     r="32"
     transform="translate(410.148 286.839)"
-    fill="#f2f2f2"
+    fill="var(--border-color-primary)"
   />
   <path
     id="Path_698"

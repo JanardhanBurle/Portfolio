@@ -2,28 +2,31 @@
 
 :root {
     /* Colors */
-    --foreground-default: #00498c;
+    --foreground-default: #0a66c2;
     --foreground-secondary: #6c63ff;
     --foreground-tertiary: #000;
-    --foreground-quaternary: #f4faff;
-    --foreground-light: #41474d;
+    --foreground-quaternary: #CCCCCC;
     --background-default: #FFF;
-    --background-secondary: #a3b9cc;
-    --background-tertiary: #5c7d99;
-    --background-light: #ffffff;
-    --primary-default: #5dfdcb;
-    --primary-dark: #24b286;
-    --primary-light: #b2ffe7;
-    --error-default: #ef3e36;
+    --background-secondary: #A3B9CC;
+    --background-tertiary: #5C7D99;
+    --background-light: #f4f4f4;
+    --primary-default: #5DFDCB;
+    --primary-dark: #24B286;
+    --primary-light: #B2FFE7;
+    --error-default: #EF3E36;
     --error-dark: #800600;
-    --error-light: #ffcecc;
-    /* Shadows */
+    --error-light: #FFCECC;
+    --border-color-primary: #f2f2f2;
+    --border-color-secondary: #c6c6c6;
+    --card-hover-bg: rgba(255, 255, 255, 0.8);
     --background-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    --profile-shadow-0: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    --profile-shadow-7: 0 0 0 10px rgba(0, 0, 0, 0);
+    --profile-shadow-10: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 :host {
     font-size: 14px;
-    color: #333;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -33,7 +36,6 @@ body {
     font-family: 'Cairo', sans-serif;
     margin: 0;
     background: var(--background-default);
-    ;
 }
 
 p {
@@ -72,41 +74,45 @@ p {
 .btn-primary {
     background: var(--background-default);
     ;
-    border: 2px solid #0a66c2;
+    border: 2px solid var(--foreground-default);
     cursor: pointer;
-    color: #0a66c2;
+    color: var(--foreground-default);
 }
 
 .btn-primary:hover {
-    background-color: #0a66c2;
-    color: #FFF;
+    background-color: var(--foreground-default);
+    color: var(--background-default);
 }
 
 .btn-secondary {
     background: var(--background-default);
-    border: 2px solid #6c63ff;
+    border: 2px solid var(--foreground-secondary);
     cursor: pointer;
-    color: #6c63ff;
-    .btn-secondary:hover {
-        color: #FFF;
-        background: #6c63ff;
-    }
-    .btn:hover {
-        box-shadow: var(--background-shadow);
-    }
-    .btn:disabled {
-        box-shadow: none;
-        background: var(--background-default);
-        border: 2px solid #CCC;
-        cursor: not-allowed;
-        color: #CCC;
-    }
-    input mat-form-field {
-        font-family: 'Cairo', sans-serif;
-        .mat-form-field-wrapper {
-            .mat-form-field-appearance-fill .mat-form-field-flex {
-                background-color: transparent;
-            }
+    color: var(--foreground-secondary);
+}
+
+.btn-secondary:hover {
+    color: var(--background-default);
+    background: var(--foreground-secondary);
+}
+
+.btn:hover {
+    box-shadow: var(--background-shadow);
+}
+
+.btn:disabled {
+    box-shadow: none;
+    background: var(--background-default);
+    border: 2px solid var(----foreground-quaternary);
+    cursor: not-allowed;
+    color: var(----foreground-quaternary);
+}
+
+input mat-form-field {
+    font-family: 'Cairo', sans-serif;
+    .mat-form-field-wrapper {
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+            background-color: transparent;
         }
     }
 }

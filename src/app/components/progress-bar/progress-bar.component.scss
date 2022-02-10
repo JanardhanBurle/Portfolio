@@ -39,7 +39,7 @@
             z-index: -5;
         }
         .glow::after {
-            background: linear-gradient(to right, #FFF 0%, transparent 100%);
+            background: linear-gradient(to right, var(--background-default) 0%, transparent 100%);
             height:calc(100% + #{$glow-radius} + #{$glow-radius});
             width:calc(100% + #{$glow-radius});
             top: (-$glow-radius);

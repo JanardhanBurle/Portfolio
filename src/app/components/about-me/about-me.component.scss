@@ -35,7 +35,7 @@
         }
         .card {
             width: 200px;
-            border: 1px solid #f2f2f2;
+            border: 1px solid var(--border-color-primary);
             padding: 20px;
             border-radius: 10px;
             height: 200px;
@@ -54,7 +54,7 @@
         }
         .card-small {
             width: 200px;
-            border: 1px solid #f2f2f2;
+            border: 1px solid var(--border-color-primary);
             padding: 15px;
             border-radius: 10px;
             height: 200px;
@@ -86,7 +86,7 @@
                 color: var(--foreground-default);
             }
             .link {
-                color: #004b8a;
+                color: var(--foreground-default);
                 text-decoration: none;
             }
             .tech-stack {
@@ -121,7 +121,7 @@
             .card,
             .card-small {
                 width: 40%;
-                border: 1px solid #f2f2f2;
+                border: 1px solid var(--border-color-primary);
                 padding: 10px;
                 border-radius: 10px;
                 height: auto;
