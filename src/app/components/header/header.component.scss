@@ -8,34 +8,33 @@
         justify-content: space-between;
         font-family: "Cairo", sans-serif;
         padding: 10px 100px;
-        background: #FFF;
+        background: var(--background-default);
+        ;
         .profile-section {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            color: #00498c;
+            color: var(--foreground-default);
             cursor: pointer;
             .profile-pic {
-                background: black;
                 border-radius: 50%;
                 height: 65px;
                 width: 65px;
-                box-shadow: 0 0 0 0 rgb(82, 221, 140);
                 transform: scale(1);
                 animation: pulse 2s infinite;
             }
             @keyframes pulse {
                 0% {
                     transform: scale(0.95);
-                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+                    box-shadow: var(--profile-shadow-0);
                 }
                 70% {
                     transform: scale(1);
-                    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+                    box-shadow: var(--profile-shadow-7);
                 }
                 100% {
                     transform: scale(0.95);
-                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                    box-shadow: var(--profile-shadow-10);
                 }
             }
             .text {
@@ -50,7 +49,7 @@
                 }
                 .desc {
                     font-size: 16px;
-                    color: #3a3a3a;
+                    color: var(--foreground-tertiary);
                     display: flex;
                     align-items: center;
                     justify-self: center;
@@ -78,9 +77,25 @@
             cursor: pointer;
         }
         .title {
-            color: #000;
+            color: var(--foreground-tertiary);
             position: relative;
             text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .las {
+                font-family: 'Line Awesome Free';
+                font-weight: 900;
+                font-size: 22px;
+                font-weight: bold;
+                color: var(--foreground-default);
+                margin-right: 5px;
+            }
+            span {
+                overflow: hidden;
+                /* Hide the element content, while height = 0 */
+                transition: height 0ms 400ms, opacity 400ms 0ms;
+            }
         }
         .title::after {
             position: absolute;
@@ -96,6 +111,13 @@
             width: 100%;
             left: 0;
         }
+        .title:hover {
+            span {
+                height: auto;
+                opacity: 1;
+                transition: height 0ms 0ms, opacity 600ms 0ms;
+            }
+        }
         .activated-route::after {
             position: absolute;
             content: "";
@@ -108,12 +130,12 @@
         }
     }
     .toolbar-bg {
-        background-color: #00498c !important;
+        background-color: var(--foreground-default) !important;
     }
     .toolbar img {
         margin: 0 16px 0 0;
         border-radius: 50%;
-        background: #FFF;
+        background: var(--background-default);
     }
     .toolbar #twitter-logo {
         height: 40px;
@@ -143,12 +165,12 @@
                 flex-direction: column;
                 margin: 0 15px;
                 border: 1px solid #cfcfcf5e;
-                background: #FFF;
+                background: var(--background-default);
                 border-radius: 10px;
                 padding: 0 10px;
                 width: 150px;
                 transition: all .2s ease-in-out;
-                box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 5px 0 rgb(0 0 0 / 19%);
+                box-shadow: var(--background-shadow);
                 .router-link {
                     text-decoration: none;
                     width: 100%;
@@ -183,7 +205,7 @@
                     }
                     .desc {
                         font-size: 15px;
-                        color: #3a3a3a;
+                        color: var(--foreground-tertiary);
                         display: flex;
                         align-items: center;
                         justify-self: center;
@@ -197,10 +219,62 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition-delay: 2s, 4ms;
-                i {
-                    font-size: 30px;
-                    font-weight: bold;
+                .menu-open {
+                    display: flex;
+                    flex-direction: column;
+                    width: 30px;
+                    height: 25px;
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    transition: all .2s ease-in-out;
+                    .span-1 {
+                        width: 30px;
+                        background: var(--foreground-tertiary);
+                        height: 2px;
+                        transition: all .2s ease-in-out;
+                    }
+                    .span-2 {
+                        width: 20px;
+                        background: var(--foreground-tertiary);
+                        height: 2px;
+                        transition: all .2s ease-in-out;
+                    }
+                    .span-3 {
+                        width: 10px;
+                        background: var(--foreground-tertiary);
+                        height: 2px;
+                        transition: all .2s ease-in-out;
+                    }
+                }
+                .menu-close {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 30px;
+                    height: 30px;
+                    justify-content: center;
+                    position: relative;
+                    .span-1 {
+                        width: 30px;
+                        background: var(--foreground-tertiary);
+                        height: 2px;
+                        transform: rotate(45deg);
+                        top: 15px;
+                        position: absolute;
+                        transition: all .2s ease-in-out;
+                    }
+                    .span-2 {
+                        width: 30px;
+                        background: var(--foreground-tertiary);
+                        height: 2px;
+                        transform: rotate(-45deg);
+                        top: 15px;
+                        position: absolute;
+                        transition: all .2s ease-in-out;
+                    }
+                }
+                .menu-img {
+                    height: 16px;
                     transition: .5s;
                 }
             }

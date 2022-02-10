@@ -6,13 +6,13 @@
         text-orientation: mixed;
         bottom: 50px;
         font-size: 12px;
-        color: #CCC;
+        color: var(--foreground-quaternary);
         display: flex;
         align-items: center;
         justify-content: center;
         ng-lottie {
             svg {
-                fill: #CCC;
+                fill: var(--foreground-quaternary);
             }
         }
     }
@@ -67,6 +67,7 @@
     }
     section {
         margin: 20px 100px;
+        color: var(--foreground-tertiary);
     }
     .profile-img-loading {
         width: 350px;

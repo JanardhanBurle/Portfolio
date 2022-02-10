@@ -12,20 +12,20 @@
         min-height: 550px;
         border-radius: 10px;
         overflow: hidden;
-        border: 1px solid #c6c6c6;
-        background: #FFF;
+        border: 1px solid var(--border-color-secondary);
+        background: var(--background-default);
         .profile-img {
             width: 100%;
         }
         .header {
-            background: #f4f4f4;
+            background: var(--background-light);
             color: #4e4e4e;
             padding: 10px;
             display: flex;
             justify-content: space-between;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            border-bottom: 1px solid #CCC;
+            border-bottom: 1px solid var(--foreground-quaternary);
             .dots {
                 display: flex;
                 align-items: center;
@@ -74,26 +74,26 @@
                     display: none;
                 }
                 .content {
-                    color: #000000;
+                    color: var(--foreground-quaternary);
                     font-size: 13px;
                     line-height: 20px;
                     margin: 0;
                     .visible {
                         font-size: 22px;
-                        color: #000;
+                        color: var(--foreground-tertiary);
                         font-family: "Cairo", sans-serif;
                         line-height: 35px;
                     }
                     .name {
                         font-size: 30px;
-                        color: #0a65c2;
+                        color: var(--foreground-default);
                         font-weight: bold;
                         font-family: "Cairo", sans-serif;
                         line-height: 35px;
                     }
                     .desc {
                         font-size: 16px;
-                        color: #000;
+                        color: var(--foreground-tertiary);
                         font-family: "Cairo", sans-serif;
                         line-height: 25px;
                     }
@@ -102,7 +102,7 @@
                         flex-direction: row;
                         align-items: center;
                         margin: 0 110px 0;
-                        color: #0964c2;
+                        color: var(--foreground-default);
                         font-size: 18px;
                         font-family: "Cairo", sans-serif;
                     }
@@ -135,7 +135,7 @@
             cursor: pointer;
             .left {
                 .content {
-                    color: #ccccccc2;
+                    color: var(--foreground-quaternary);
                     font-size: 13px;
                     line-height: 20px;
                     margin: 0;
@@ -175,10 +175,10 @@
                     }
                     .content {
                         font-size: 12px;
-                        color: #ccc;
+                        color: var(--foreground-quaternary);
                         .visible {
                             font-size: 20px;
-                            color: #000;
+                            color: var(--foreground-tertiary);
                             font-family: "Cairo", sans-serif;
                             line-height: 30px;
                         }
@@ -187,7 +187,7 @@
                             flex-direction: row;
                             margin: -20px 0 -20px 20px;
                             align-items: center;
-                            color: #0964c2;
+                            color: var(--foreground-default);
                             font-size: 18px;
                             font-family: "Cairo", sans-serif;
                         }

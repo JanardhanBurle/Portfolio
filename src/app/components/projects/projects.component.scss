@@ -10,7 +10,7 @@
     .title {
         text-align: center;
         font-size: 34px;
-        color: #004a8b;
+        color: var(--foreground-default);
         margin-top: 20px;
     }
     .title-desc {
@@ -68,7 +68,7 @@
                 width: 50%;
                 height: 100%;
                 border-radius: 10px;
-                background: #ffffffed;
+                background: var(--card-hover-bg);
                 padding: 20px;
                 right: 0;
                 display: flex;
@@ -78,12 +78,12 @@
                 .name {
                     display: flex;
                     font-size: 24px;
-                    color: #004a8b;
+                    color: var(--foreground-default);
                 }
                 .desc {
                     display: flex;
                     font-size: 16px;
-                    color: #000;
+                    color: var(--foreground-tertiary);
                     margin-bottom: 15px;
                 }
                 .btns {
@@ -102,13 +102,13 @@
         }
         .project-name {
             font-size: 24px;
-            color: #004a8b;
+            color: var(--foreground-default);
         }
     }
     @media only screen and (max-width: 600px) {
         .title {
             font-size: 24px;
-            color: #004a8b;
+            color: var(--foreground-default);
             margin: 0;
             text-align: start;
         }
@@ -141,7 +141,7 @@
                     width: 100%;
                     height: 100%;
                     border-radius: 10px;
-                    background: #ffffffed;
+                    background: var(--card-hover-bg);
                     padding: 20px 0;
                     right: 0;
                     display: flex;
@@ -151,12 +151,12 @@
                     .name {
                         display: flex;
                         font-size: 20px;
-                        color: #004a8b;
+                        color: var(--foreground-default);
                     }
                     .desc {
                         display: flex;
                         font-size: 14px;
-                        color: #000;
+                        color: var(--foreground-tertiary);
                         margin-bottom: 10px;
                     }
                     .btns {

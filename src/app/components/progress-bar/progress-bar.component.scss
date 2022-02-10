@@ -1,6 +1,6 @@
 :host {
     $bar-empty: #e6e6e6;
-    $bar-color: #6c63ff;
+    $bar-color: var(--foreground-secondary);
     $glow-width: 60px;
     $glow-radius: 10px;
     $glow-color: #a49ff5;
@@ -39,7 +39,7 @@
             z-index: -5;
         }
         .glow::after {
-            background: linear-gradient(to right, #FFF 0%, transparent 100%);
+            background: linear-gradient(to right, var(--background-default) 0%, transparent 100%);
             height:calc(100% + #{$glow-radius} + #{$glow-radius});
             width:calc(100% + #{$glow-radius});
             top: (-$glow-radius);
@@ -49,7 +49,7 @@
     }
     // messages 
     .label {
-        color: #6c63ff;
+        color: var(--foreground-secondary);
         font-size: 14px;
     }
     // animations
@@ -108,7 +108,7 @@
             .glow::before {
                 background: none;
                 height: unset;
-                box-shadow: 0px 0px 5px #6c63ff, 0px 0px 5px #a49ff5;
+                box-shadow: 0px 0px 5px var(--foreground-secondary), 0px 0px 5px #a49ff5;
                 z-index: -5;
             }
             .glow::after {

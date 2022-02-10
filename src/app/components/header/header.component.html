@@ -12,19 +12,29 @@
         </div>
     </div>
     <div class="menu-btn" (click)="hideMenu=!hideMenu;">
-        <i *ngIf="hideMenu;else close" class="las la-ellipsis-v"></i>
+        <div *ngIf="hideMenu;else close" class="menu-open">
+            <div class="span-1"></div>
+            <div class="span-2"></div>
+            <div class="span-3"></div>
+        </div>
         <ng-template #close>
-            <i class="las la-times"></i>
+            <div class="menu-close">
+                <div class="span-1"></div>
+                <div class="span-2"></div>
+            </div>
         </ng-template>
     </div>
     <div class="toolbar" role="banner">
         <ng-container *ngFor="let router of routerLinks">
             <div class="router-link">
                 <a class="title" href="#{{router.path}}" title="{{router.label}}">
-                    {{router.label}}
+                    <i class="las" [ngClass]="router.icon"></i> <span>{{router.label}}</span>
                 </a>
             </div>
         </ng-container>
+
+        <button (click)="changeTheme()">change Theme</button>
+
     </div>
 </div>
 
@@ -34,9 +44,11 @@
         <ng-container *ngFor="let router of routerLinks">
             <div class="router-link">
                 <a class="title" href="#{{router.path}}" (click)="hideMenu=!hideMenu;" title="{{router.label}}">
-                    {{router.label}}
+                    <i class="las" [ngClass]="router.icon"></i> {{router.label}}
                 </a>
             </div>
         </ng-container>
+        <button (click)="changeTheme()">change Theme</button>
+
     </div>
 </div>
