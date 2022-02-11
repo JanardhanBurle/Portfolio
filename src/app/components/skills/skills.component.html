@@ -1,36 +1,47 @@
 <div [@bounce]="bounceDivState" class="row">
-    <div class="left">
-        <div class="item" data-aos="fade-bottom">
-            <div class="tech-stack">Technical expertise</div>
+    <div class="item" data-aos="fade-bottom">
+        <div class="tech-stack">Technical expertise</div>
+        <div class="skills-cards">
             <ng-container *ngFor="let tech of technology">
-                <app-progress-bar [aos]="tech.aos" [label]="tech.label" [progress]="tech.progress">
-                </app-progress-bar>
+                <div appBlurOnHover="skill-card" data-aos="fade-down" class="skill-card">
+                    <img alt="Profile" [src]="tech.icon" />
+                    <div class="right">
+                        <div class="progress">
+                            <ng-container *ngFor="let _ of [].constructor(10); let i = index">
+                                <span class="dot" [ngClass]="{'filled':i<tech.progress}"></span>
+                            </ng-container>
+                        </div>
+
+                        <p class="name">{{tech.label}}</p>
+                        <p>{{tech.exp}} Years</p>
+
+                    </div>
+                </div>
             </ng-container>
         </div>
     </div>
-    <div class="right">
-        <div appBlurOnHover="card" data-aos="fade-down" class="card">
-            <img alt="Profile" src="assets/images/responsive.svg" />
-            <p>My layouts will work on any device, big or small.</p>
-        </div>
-        <div appBlurOnHover="card" data-aos="fade-right" class="card">
-            <img alt="Profile" src="assets/images/speed.svg" />
-            <p>Fast load times and lag free interaction, my highest priority.</p>
-        </div>
-        <div appBlurOnHover="card" data-aos="fade-up" class="card">
-            <img alt="Profile" src="assets/images/Intuitive.svg" />
-            <p>Strong preference for easy to use, intuitive shared Components.</p>
-        </div>
-        <div appBlurOnHover="card" data-aos="fade-right" class="card">
-            <img alt="Profile" src="assets/images/dynamic.svg" />
-            <p>Web Applications don't have to be static, I love making pages come to life.</p>
-        </div>
-    </div>
+</div>
 
+<div [@bounce]="bounceDivState" class="row">
+    <div appBlurOnHover="card" data-aos="fade-down" class="card">
+        <img alt="Profile" src="assets/images/responsive.svg" />
+        <p>My layouts will work on any device, big or small.</p>
+    </div>
+    <div appBlurOnHover="card" data-aos="fade-right" class="card">
+        <img alt="Profile" src="assets/images/speed.svg" />
+        <p>Fast load times and lag free interaction, my highest priority.</p>
+    </div>
+    <div appBlurOnHover="card" data-aos="fade-up" class="card">
+        <img alt="Profile" src="assets/images/Intuitive.svg" />
+        <p>Strong preference for easy to use, intuitive shared Components.</p>
+    </div>
+    <div appBlurOnHover="card" data-aos="fade-right" class="card">
+        <img alt="Profile" src="assets/images/dynamic.svg" />
+        <p>Web Applications don't have to be static, I love making pages come to life.</p>
+    </div>
 </div>
 
 <div class="row mob">
-
     <div appBlurOnHover="card-small" data-aos="fade-right" class="card-small">
         <img alt="Profile" src="assets/images/angular-material.svg" />
         <p class="short-info">familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.</p>

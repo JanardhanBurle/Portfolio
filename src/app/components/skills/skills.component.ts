@@ -34,34 +34,46 @@ export class SkillsComponent implements OnInit {
   showContent = false;
   technology = [
     {
-      label: "HTML",
-      progress: "95%",
+      label: "Flutter",
+      progress: 7,
       aos: "fade-up",
-    },
-    {
-      label: "CSS",
-      progress: "90%",
-      aos: "fade-up",
-    },
-    {
-      label: "Javascript",
-      progress: "93%",
-      aos: "fade-up",
+      icon: "assets/images/flutter.svg",
+      exp: 1.5,
     },
     {
       label: "Angular",
-      progress: "90%",
+      progress: 9,
       aos: "fade-up",
+      icon: "assets/images/angular.svg",
+      exp: 5.3,
+    },
+    {
+      label: "Javascript",
+      progress: 9,
+      aos: "fade-up",
+      icon: "assets/images/js.png",
+      exp: 5.3,
     },
     {
       label: "Node Js",
-      progress: "87%",
+      progress: 8,
       aos: "fade-up",
+      icon: "assets/images/node.png",
+      exp: 2.5,
     },
     {
-      label: "Flutter",
-      progress: "87%",
+      label: "HTML",
+      progress: 9,
       aos: "fade-up",
+      icon: "assets/images/html.png",
+      exp: 5.3,
+    },
+    {
+      label: "CSS",
+      progress: 9,
+      aos: "fade-up",
+      icon: "assets/images/css.svg",
+      exp: 5.3,
     },
   ];
 
