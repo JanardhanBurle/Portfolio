@@ -14,6 +14,7 @@ import {
   SimpleChanges,
   ViewChild,
 } from "@angular/core";
+import { ThemeService } from "src/app/Theme/theme.service";
 declare var Typed: any;
 
 @Component({
@@ -49,7 +50,12 @@ declare var Typed: any;
   ],
 })
 export class LandingPageComponent implements OnInit, AfterViewInit {
-  constructor() {}
+  theme: any;
+  constructor(private themeService: ThemeService) {
+    this.themeService.selectedTheme.subscribe((res) => {
+      this.theme = res;
+    });
+  }
   @ViewChild("htmlContent") htmlContent: any;
   @ViewChild("htmlContentMob") htmlContentMob: any;
   bounceDivState = "initial";

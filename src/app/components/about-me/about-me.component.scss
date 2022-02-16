@@ -5,7 +5,6 @@
     $glow-width: 60px;
     $glow-radius: 10px;
     $glow-color: #04bfff;
-    font-family: 'Cairo', sans-serif;
     .title {
         text-align: center;
         font-size: 34px;
@@ -94,6 +93,10 @@
                 margin: 35px auto 10px;
                 color: var(--foreground-default);
             }
+            p {
+                line-height: 35px;
+                font-size: 18px;
+            }
         }
     }
     @media only screen and (max-width: 600px) {
@@ -116,6 +119,10 @@
                     font-size: 18px;
                     margin: 15px auto 5px;
                     color: var(--foreground-default);
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
                 }
             }
             .card,
@@ -148,7 +155,7 @@
         .title {
             font-size: 24px;
             color: var(--foreground-default);
-            margin-bottom: 0;
+            margin-bottom: 10px;
             text-align: start;
         }
     }

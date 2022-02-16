@@ -8,7 +8,7 @@ export const light: Theme = {
   properties: {
     "--foreground-default": "#0a66c2",
     "--foreground-secondary": "#6c63ff",
-    "--foreground-tertiary": "#000",
+    "--foreground-tertiary": "#121212",
     "--foreground-quaternary": "#CCCCCC",
 
     "--background-default": "#FFF",
@@ -39,7 +39,7 @@ export const dark: Theme = {
   properties: {
     "--foreground-default": "#f5993d",
     "--foreground-secondary": "#939c00",
-    "--foreground-tertiary": "#FFF",
+    "--foreground-tertiary": "#ededed",
     "--foreground-quaternary": "#333333",
 
     "--background-default": "#000",
@@ -54,7 +54,7 @@ export const dark: Theme = {
     "--error-default": "#EF3E36",
     "--error-dark": "#800600",
     "--error-light": "#FFCECC",
-    "--border-color-primary": "#0d0d0d",
+    "--border-color-primary": "#3a3a3a",
     "--border-color-secondary": "#393939",
     "--card-hover-bg": "rgba(0, 0, 0, 0.8)",
     "--background-shadow":

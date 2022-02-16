@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { BehaviorSubject, Observable, Subject } from "rxjs";
 import { Theme, light, dark } from "./theme";
 
 @Injectable({
@@ -7,7 +8,7 @@ import { Theme, light, dark } from "./theme";
 export class ThemeService {
   private active: Theme = light;
   private availableThemes: Theme[] = [light, dark];
-
+  public selectedTheme = new BehaviorSubject<any>(light);
   getAvailableThemes(): Theme[] {
     return this.availableThemes;
   }
@@ -30,7 +31,7 @@ export class ThemeService {
 
   setActiveTheme(theme: Theme): void {
     this.active = theme;
-
+    this.selectedTheme.next(this.active);
     Object.keys(this.active.properties).forEach((property) => {
       document.documentElement.style.setProperty(
         property,

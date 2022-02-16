@@ -48,7 +48,7 @@
 
             <ng-lottie *ngIf="status==='PENDING'" height="70%" containerClass="moving-box another-class" [options]="optionsLoading">
             </ng-lottie>
-            <form *ngIf="status==='INIT'" data-aos="fade-down" [formGroup]="form" class="example-form">
+            <form *ngIf="status==='INIT'" data-aos="fade-down" (submit)="submitForm()" [formGroup]="form" class="example-form">
                 <img src="assets/images/mail.svg" alt="">
                 <mat-form-field class="form-control" appearance="standard">
                     <mat-label>Full Name</mat-label>
@@ -77,7 +77,7 @@
                 </mat-form-field>
 
                 <div class="btn-submit">
-                    <button [disabled]="form.invalid" (click)="submitForm()" class="btn btn-primary">
+                    <button (click)="submitForm()" class="btn btn-primary">
                         <span>Send Message</span>
                         <i class="las la-paper-plane"></i>
                     </button>

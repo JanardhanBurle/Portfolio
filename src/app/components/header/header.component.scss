@@ -6,7 +6,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-family: "Cairo", sans-serif;
+        font-family: appfont2;
         padding: 10px 100px;
         background: var(--background-default);
         ;
@@ -44,8 +44,54 @@
                 margin-left: 15px;
                 justify-content: space-around;
                 line-height: 30px;
+                /* Tutorial on https://fossheim.io/writing/posts/css-text-gradient. */
                 .name {
-                    font-size: 26px;
+                    /* Fallback: Set a background color. */
+                    background-color: #CA4246;
+                    font-size: 30px;
+                    font-family: appfont;
+                    font-weight: bold;
+                    /* Create the gradient. */
+                    background-image: linear-gradient( 45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+                    /* Set the background size and repeat properties. */
+                    background-size: 100%;
+                    background-repeat: repeat;
+                    /* Use the text as a mask for the background. */
+                    /* This will show the gradient as a text color rather than element bg. */
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    /* Animate the text when loading the element. */
+                    /* This animates it on page load and when hovering out. */
+                    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+                }
+                .gradient-text:hover {
+                    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+                }
+                /* Move the background and make it smaller. */
+                /* Animation shown when entering the page and after the hover animation. */
+                @keyframes rainbow-text-simple-animation-rev {
+                    0% {
+                        background-size: 650%;
+                    }
+                    40% {
+                        background-size: 650%;
+                    }
+                    100% {
+                        background-size: 100%;
+                    }
+                }
+                /* Move the background and make it larger. */
+                /* Animation shown when hovering over the text. */
+                @keyframes rainbow-text-simple-animation {
+                    0% {
+                        background-size: 100%;
+                    }
+                    80% {
+                        background-size: 650%;
+                    }
+                    100% {
+                        background-size: 650%;
+                    }
                 }
                 .desc {
                     font-size: 16px;
@@ -83,6 +129,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            font-size: 16px;
             .las {
                 font-family: 'Line Awesome Free';
                 font-weight: 900;
@@ -179,6 +226,13 @@
                     text-align: center;
                     a {
                         text-decoration: none;
+                        color: var(--foreground-tertiary);
+                        display: flex;
+                        align-items: center;
+                        i {
+                            margin-right: 10px;
+                            font-size: 25px;
+                        }
                     }
                 }
                 .router-link:last-child {

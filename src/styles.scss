@@ -4,7 +4,7 @@
     /* Colors */
     --foreground-default: #0a66c2;
     --foreground-secondary: #6c63ff;
-    --foreground-tertiary: #000;
+    --foreground-tertiary: #121212;
     --foreground-quaternary: #CCCCCC;
     --background-default: #FFF;
     --background-secondary: #A3B9CC;
@@ -32,8 +32,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+    font-family: appfont;
+    src: url('/assets/fonts/FuturaBookfont.ttf');
+}
+
+@font-face {
+    font-family: appfont2;
+    src: url('/assets/fonts/FuturaBookfont.ttf');
+}
+
 body {
-    font-family: 'Cairo', sans-serif;
+    font-family: appfont;
     margin: 0;
     background: var(--background-default);
 }
@@ -109,7 +119,7 @@ p {
 }
 
 input mat-form-field {
-    font-family: 'Cairo', sans-serif;
+    font-family: appfont;
     .mat-form-field-wrapper {
         .mat-form-field-appearance-fill .mat-form-field-flex {
             background-color: transparent;

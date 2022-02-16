@@ -5,7 +5,7 @@
     $glow-width: 60px;
     $glow-radius: 10px;
     $glow-color: #04bfff;
-    font-family: 'Cairo', sans-serif;
+    font-family: appfont;
     padding: 10px;
     .title {
         text-align: center;
@@ -109,7 +109,7 @@
         .title {
             font-size: 24px;
             color: var(--foreground-default);
-            margin: 0;
+            margin: 0 0 15px auto;
             text-align: start;
         }
         .title-desc {
@@ -151,13 +151,14 @@
                     .name {
                         display: flex;
                         font-size: 20px;
+                        margin: 10px 0;
                         color: var(--foreground-default);
                     }
                     .desc {
                         display: flex;
-                        font-size: 14px;
+                        font-size: 16px;
                         color: var(--foreground-tertiary);
-                        margin-bottom: 10px;
+                        margin-bottom: 20px;
                     }
                     .btns {
                         display: flex;
