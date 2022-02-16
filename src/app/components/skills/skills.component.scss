@@ -1,173 +1,173 @@
-                          :host {
-                             $background-color: #3d5980;
-                             $bar-empty: #e6e6e6;
-                             $bar-color: #3c88cd;
-                             $glow-width: 60px;
-                             $glow-radius: 10px;
-                             $glow-color: #04bfff;
-                             font-family: 'Cairo', sans-serif;
-                             .title {
-                                 text-align: center;
-                                 font-size: 34px;
-                                 color: var(--foreground-default);
-                                 margin: 20px auto;
-                             }
-                             .row {
-                                 display: flex;
-                                 justify-content: space-between;
-                                 flex-direction: row;
-                                 flex-wrap: wrap;
-                                 margin: 25px 0;
-                                 .card {
-                                     width: 200px;
-                                     border: 1px solid var(--border-color-primary);
-                                     padding: 20px;
-                                     border-radius: 10px;
-                                     height: 200px;
-                                     display: flex;
-                                     flex-direction: column;
-                                     align-items: center;
-                                     justify-content: space-between;
-                                     cursor: pointer;
-                                     img {
-                                         height: 100px;
-                                     }
-                                     p {
-                                         font-size: 15px;
-                                         text-align: center;
-                                     }
-                                 }
-                                 .card-small {
-                                     width: 200px;
-                                     border: 1px solid var(--border-color-primary);
-                                     padding: 15px;
-                                     border-radius: 10px;
-                                     height: 200px;
-                                     display: flex;
-                                     flex-direction: column;
-                                     align-items: center;
-                                     justify-content: space-between;
-                                     cursor: pointer;
-                                     img {
-                                         height: 80px;
-                                     }
-                                     p {
-                                         font-size: 15px;
-                                         text-align: center;
-                                     }
-                                 }
-                                 app-progress-bar {
-                                     width: 100%;
-                                 }
-                                 .skills-cards {
-                                     display: flex;
-                                     flex-wrap: wrap;
-                                     align-items: center;
-                                     justify-self: center;
-                                     .skill-card {
-                                         border: 1px solid var(--border-color-primary);
-                                         padding: 15px;
-                                         border-radius: 10px;
-                                         display: flex;
-                                         flex-direction: row;
-                                         align-items: center;
-                                         justify-content: space-between;
-                                         cursor: pointer;
-                                         width: 350px;
-                                         flex-wrap: wrap;
-                                         margin: 10px;
-                                         img {
-                                             height: 80px;
-                                         }
-                                         .right {
-                                             display: flex;
-                                             flex-direction: column;
-                                             align-items: flex-end;
-                                             .progress {
-                                                 display: flex;
-                                                 align-items: center;
-                                                 flex-direction: row;
-                                                 margin-bottom: 10px;
-                                                 .dot {
-                                                     height: 6px;
-                                                     width: 6px;
-                                                     margin: 5px;
-                                                     border-radius: 50%;
-                                                     background-color: var(--foreground-quaternary);
-                                                 }
-                                                 .filled {
-                                                     background-color: var(--foreground-secondary);
-                                                 }
-                                             }
-                                             .name {
-                                                 color: var(--foreground-default);
-                                                 font-size: 22px;
-                                             }
-                                         }
-                                     }
-                                 }
-                                 .item {
-                                     width: 100%;
-                                     .title {
-                                         font-size: 32px;
-                                         color: var(--foreground-default);
-                                     }
-                                     .link {
-                                         color: var(--foreground-default);
-                                         text-decoration: none;
-                                     }
-                                     .tech-stack {
-                                         font-size: 20px;
-                                         margin: 35px auto 10px;
-                                         color: var(--foreground-default);
-                                     }
-                                 }
-                             }
-                             @media only screen and (max-width: 600px) {
-                                 .row {
-                                     display: flex;
-                                     margin: 0;
-                                     .card,
-                                     .card-small {
-                                         width: 40%;
-                                         border: 1px solid var(--border-color-primary);
-                                         padding: 10px;
-                                         border-radius: 10px;
-                                         height: auto;
-                                         display: flex;
-                                         flex-direction: column;
-                                         align-items: center;
-                                         justify-content: center;
-                                         cursor: pointer;
-                                         margin: 5px auto;
-                                         img {
-                                             width: 75%;
-                                             height: auto;
-                                         }
-                                         p {
-                                             margin-top: 10px;
-                                             font-size: 14px;
-                                         }
-                                     }
-                                     .skills-cards {
-                                         .skill-card {
-                                             width: 100%;
-                                             padding: 10px 15px;
-                                             img {
-                                                 height: 70px;
-                                             }
-                                         }
-                                     }
-                                     .mob {
-                                         display: flex;
-                                         flex-direction: row;
-                                     }
-                                     .title {
-                                         font-size: 24px;
-                                         color: var(--foreground-default);
-                                         margin-bottom: 0;
-                                         text-align: start;
-                                     }
-                                 }
-                             }
-                         }
+                                                                :host {
+                                                                   $background-color: #3d5980;
+                                                                   $bar-empty: #e6e6e6;
+                                                                   $bar-color: #3c88cd;
+                                                                   $glow-width: 60px;
+                                                                   $glow-radius: 10px;
+                                                                   $glow-color: #04bfff;
+                                                                   font-family: appfont;
+                                                                   .title {
+                                                                       text-align: center;
+                                                                       font-size: 34px;
+                                                                       color: var(--foreground-default);
+                                                                       margin: 20px auto;
+                                                                   }
+                                                                   .row {
+                                                                       display: flex;
+                                                                       justify-content: space-between;
+                                                                       flex-direction: row;
+                                                                       flex-wrap: wrap;
+                                                                       margin: 25px 0;
+                                                                       .card {
+                                                                           width: 200px;
+                                                                           border: 1px solid var(--border-color-primary);
+                                                                           padding: 20px;
+                                                                           border-radius: 10px;
+                                                                           height: 200px;
+                                                                           display: flex;
+                                                                           flex-direction: column;
+                                                                           align-items: center;
+                                                                           justify-content: space-between;
+                                                                           cursor: pointer;
+                                                                           img {
+                                                                               height: 100px;
+                                                                           }
+                                                                           p {
+                                                                               font-size: 15px;
+                                                                               text-align: center;
+                                                                           }
+                                                                       }
+                                                                       .card-small {
+                                                                           width: 200px;
+                                                                           border: 1px solid var(--border-color-primary);
+                                                                           padding: 15px;
+                                                                           border-radius: 10px;
+                                                                           height: 200px;
+                                                                           display: flex;
+                                                                           flex-direction: column;
+                                                                           align-items: center;
+                                                                           justify-content: space-between;
+                                                                           cursor: pointer;
+                                                                           img {
+                                                                               height: 80px;
+                                                                           }
+                                                                           p {
+                                                                               font-size: 15px;
+                                                                               text-align: center;
+                                                                           }
+                                                                       }
+                                                                       app-progress-bar {
+                                                                           width: 100%;
+                                                                       }
+                                                                       .skills-cards {
+                                                                           display: flex;
+                                                                           flex-wrap: wrap;
+                                                                           align-items: center;
+                                                                           justify-self: center;
+                                                                           .skill-card {
+                                                                               border: 1px solid var(--border-color-primary);
+                                                                               padding: 15px;
+                                                                               border-radius: 10px;
+                                                                               display: flex;
+                                                                               flex-direction: row;
+                                                                               align-items: center;
+                                                                               justify-content: space-between;
+                                                                               cursor: pointer;
+                                                                               width: 350px;
+                                                                               flex-wrap: wrap;
+                                                                               margin: 10px;
+                                                                               img {
+                                                                                   height: 80px;
+                                                                               }
+                                                                               .right {
+                                                                                   display: flex;
+                                                                                   flex-direction: column;
+                                                                                   align-items: flex-end;
+                                                                                   .progress {
+                                                                                       display: flex;
+                                                                                       align-items: center;
+                                                                                       flex-direction: row;
+                                                                                       .dot {
+                                                                                           height: 6px;
+                                                                                           width: 6px;
+                                                                                           margin: 5px;
+                                                                                           border-radius: 50%;
+                                                                                           background-color: var(--foreground-quaternary);
+                                                                                       }
+                                                                                       .filled {
+                                                                                           background-color: var(--foreground-secondary);
+                                                                                       }
+                                                                                   }
+                                                                                   .name {
+                                                                                       color: var(--foreground-default);
+                                                                                       font-size: 20px;
+                                                                                       margin: 12px 0px;
+                                                                                   }
+                                                                               }
+                                                                           }
+                                                                       }
+                                                                       .item {
+                                                                           width: 100%;
+                                                                           .title {
+                                                                               font-size: 32px;
+                                                                               color: var(--foreground-default);
+                                                                           }
+                                                                           .link {
+                                                                               color: var(--foreground-default);
+                                                                               text-decoration: none;
+                                                                           }
+                                                                           .tech-stack {
+                                                                               font-size: 20px;
+                                                                               margin: 35px auto 10px;
+                                                                               color: var(--foreground-default);
+                                                                           }
+                                                                       }
+                                                                   }
+                                                                   @media only screen and (max-width: 600px) {
+                                                                       .row {
+                                                                           display: flex;
+                                                                           margin: 0;
+                                                                           .card,
+                                                                           .card-small {
+                                                                               width: 40%;
+                                                                               border: 1px solid var(--border-color-primary);
+                                                                               padding: 10px;
+                                                                               border-radius: 10px;
+                                                                               height: auto;
+                                                                               display: flex;
+                                                                               flex-direction: column;
+                                                                               align-items: center;
+                                                                               justify-content: center;
+                                                                               cursor: pointer;
+                                                                               margin: 5px auto;
+                                                                               img {
+                                                                                   width: 75%;
+                                                                                   height: auto;
+                                                                               }
+                                                                               p {
+                                                                                   margin-top: 10px;
+                                                                                   font-size: 14px;
+                                                                               }
+                                                                           }
+                                                                           .skills-cards {
+                                                                               .skill-card {
+                                                                                   width: 100%;
+                                                                                   padding: 10px 15px;
+                                                                                   img {
+                                                                                       height: 70px;
+                                                                                   }
+                                                                               }
+                                                                           }
+                                                                           .mob {
+                                                                               display: flex;
+                                                                               flex-direction: row;
+                                                                           }
+                                                                           .title {
+                                                                               font-size: 24px;
+                                                                               color: var(--foreground-default);
+                                                                               margin-bottom: 0;
+                                                                               text-align: start;
+                                                                           }
+                                                                       }
+                                                                   }
+                                                               }

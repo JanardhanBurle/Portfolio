@@ -63,12 +63,14 @@ export class ContactMeComponent implements OnInit {
   }
 
   submitForm() {
-    this.status = "PENDING";
-    this.http.post(this.form.value).subscribe((res: any) => {
-      console.log(res.toString());
-      if ((res.status = 200)) {
-        this.status = "SUCCESS";
-      }
-    });
+    if (this.form.valid) {
+      this.status = "PENDING";
+      this.http.post(this.form.value).subscribe((res: any) => {
+        console.log(res.toString());
+        if ((res.status = 200)) {
+          this.status = "SUCCESS";
+        }
+      });
+    }
   }
 }

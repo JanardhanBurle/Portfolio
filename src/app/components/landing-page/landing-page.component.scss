@@ -81,20 +81,20 @@
                     .visible {
                         font-size: 22px;
                         color: var(--foreground-tertiary);
-                        font-family: "Cairo", sans-serif;
+                        font-family: appfont;
                         line-height: 35px;
                     }
                     .name {
                         font-size: 30px;
                         color: var(--foreground-default);
                         font-weight: bold;
-                        font-family: "Cairo", sans-serif;
+                        font-family: appfont;
                         line-height: 35px;
                     }
                     .desc {
                         font-size: 16px;
                         color: var(--foreground-tertiary);
-                        font-family: "Cairo", sans-serif;
+                        font-family: appfont;
                         line-height: 25px;
                     }
                     .tech-stack-group {
@@ -104,7 +104,7 @@
                         margin: 0 110px 0;
                         color: var(--foreground-default);
                         font-size: 18px;
-                        font-family: "Cairo", sans-serif;
+                        font-family: appfont;
                     }
                     .item {
                         display: flex;
@@ -112,7 +112,7 @@
                         padding: 10px;
                         border: 1px solid #5c91d442;
                         border-radius: 5px;
-                        font-family: "Cairo", sans-serif;
+                        font-family: appfont;
                         align-items: center;
                         justify-content: center;
                     }
@@ -146,7 +146,7 @@
     .action-btns {
         display: flex;
         margin: 10px 0;
-        font-family: "Cairo", sans-serif;
+        font-family: appfont;
         align-items: center;
         justify-content: center;
     }
@@ -179,7 +179,7 @@
                         .visible {
                             font-size: 20px;
                             color: var(--foreground-tertiary);
-                            font-family: "Cairo", sans-serif;
+                            font-family: appfont;
                             line-height: 30px;
                         }
                         .tech-stack-group {
@@ -189,7 +189,7 @@
                             align-items: center;
                             color: var(--foreground-default);
                             font-size: 18px;
-                            font-family: "Cairo", sans-serif;
+                            font-family: appfont;
                         }
                         .name {
                             font-size: 24px;

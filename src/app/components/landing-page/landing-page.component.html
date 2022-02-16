@@ -12,7 +12,7 @@
             <div class="intro-mob"></div>
         </div>
         <div class="right">
-            <img data-aos="flip-up" class="profile-img" alt="Profile" src="assets/images/full.svg" />
+            <img data-aos="flip-up" class="profile-img" alt="Profile" [src]="theme.name=='light'?'assets/images/full.svg':'assets/images/full_n.svg'" />
             <div class="action-btns">
                 <a data-aos="fade-right" href="https://www.linkedin.com/in/its-me-janardhan-burle/" target="_blank" class="btn btn-primary" tabindex="0">
                     <i class="lab la-linkedin"></i>
@@ -52,7 +52,7 @@
     &lt;!-- Hover on me to view the content -->
         &lt;pre>
             &lt;h3><span class="visible">Hello,
-                          My Name is</span>&lt;/h3>
+                    My Name is</span>&lt;/h3>
             &lt;h2><span class="name">Janardhanarao Burle,</span>&lt;/h2>
             &lt;div class="tec-group"> <div class="tech-stack-group">
               <div class="item"><img style="margin-right: 10px;" src="assets/images/angular.svg" height="25" alt="">Angular</div>
@@ -62,7 +62,7 @@
             </div>
             &lt;/div>
             &lt;p><span class="desc"> I am a Frontend Developer working primarily in the web and mobile spaces.
-                                  My passion lies in converting a design into code and achieving a close to pixel-perfect end-product.</span>&lt;/p>
+                         My passion lies in converting a design into code and achieving a close to pixel-perfect end-product.</span>&lt;/p>
             &lt;br>                     
         &lt;/pre>
     &lt;/body>
@@ -78,15 +78,15 @@
     &lt;body>
     &lt;pre>
     &lt;h3>
-    <span class="visible"> Hello,
+    <span class="visible">Hello,
         My Name is</span>&lt;/h3>
     &lt;h2><span class="name">Janardhanarao Burle,</span>&lt;/h2>
     &lt;div class="tec-group">
     <div class="tech-stack-group"><div class="item"><img style="margin-right: 5px;" src="assets/images/angular.svg" height="25" alt="">Angular </div><span>|</span><div class="item"><img style="margin-right: 5px;" src="assets/images/flutter.svg" height="25" alt="">Flutter</div><span>Developer</span></div>
     &lt;/div>
     &lt;p><span class="desc"> My passion lies in converting a design 
-              into code and achieving a close to 
-              pixel-perfect end-product.</span>&lt;/p>                     
+            into code and achieving a close to 
+            pixel-perfect end-product.</span>&lt;/p>                     
     &lt;/pre>
     &lt;/body>
 &lt;/html>

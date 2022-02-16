@@ -1,6 +1,6 @@
 :host {
     margin: 25px 0;
-    font-family: 'Cairo', sans-serif;
+    font-family: appfont;
     .title {
         text-align: center;
         font-size: 34px;
@@ -57,6 +57,8 @@
                 ul {
                     margin: 0;
                     padding: 20px;
+                    font-size: 16px;
+                    line-height: 26px;
                 }
                 .date {
                     position: absolute;
