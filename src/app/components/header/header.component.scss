@@ -11,7 +11,6 @@
         background: var(--background-default);
         .theme {
             width: 40px;
-            border: 2px solid #cccccc26;
             height: 40px;
             border-radius: 50%;
             cursor: pointer;
@@ -248,16 +247,24 @@
         }
         .header {
             padding: 10px;
+            .theme {
+                width: 30px;
+                border: none;
+                height: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 15px;
+            }
             .profile-section {
                 .profile-pic {
-                    height: 50px;
-                    width: 50px;
+                    height: 40px;
+                    width: 40px;
                 }
                 .text {
                     display: flex;
                     align-items: start;
                     flex-direction: column;
-                    margin-left: 15px;
+                    margin-left: 10px;
                     justify-content: space-around;
                     line-height: 24px;
                     .name {
