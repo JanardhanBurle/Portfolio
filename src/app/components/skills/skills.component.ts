@@ -41,7 +41,7 @@ export class SkillsComponent implements OnInit {
       exp: 1.5,
     },
     {
-      label: "Angular",
+      label: "Angular V(13)",
       progress: 9,
       aos: "fade-up",
       icon: "assets/images/angular.svg",
@@ -62,17 +62,31 @@ export class SkillsComponent implements OnInit {
       exp: 2.5,
     },
     {
-      label: "HTML",
+      label: "HTML5",
       progress: 9,
       aos: "fade-up",
       icon: "assets/images/html.png",
       exp: 5.3,
     },
     {
-      label: "CSS",
+      label: "CSS3",
       progress: 9,
       aos: "fade-up",
       icon: "assets/images/css.svg",
+      exp: 5.3,
+    },
+    {
+      label: "Backbase",
+      progress: 6,
+      aos: "fade-up",
+      icon: "assets/images/backbase.png",
+      exp: 5.3,
+    },
+    {
+      label: "Sitefinity",
+      progress: 6,
+      aos: "fade-up",
+      icon: "assets/images/sitefinity.png",
       exp: 5.3,
     },
   ];
@@ -80,37 +94,22 @@ export class SkillsComponent implements OnInit {
   techStackCards = [
     {
       imgUrl: "assets/images/angular-material.svg",
-      shortDescription:
-        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
-      longDescription: "UI Component libraries",
+      desc: " Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5, Data Driven Documents(D3.js) and Flexbox CSS.",
       aos: "fade-right",
     },
     {
-      imgUrl: "assets/images/angular-material.svg",
-      shortDescription:
-        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
-      longDescription: "UI Component libraries",
+      imgUrl: "assets/images/git.svg",
+      desc: "Excellent knowledge of Git Version Control including Branching, Merging and CI/CD pipeline configuration in web-based hosting services like GitHub, Bitbucket and GitLab etc.",
       aos: "fade-right",
     },
     {
-      imgUrl: "assets/images/angular-material.svg",
-      shortDescription:
-        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
-      longDescription: "UI Component libraries",
+      imgUrl: "assets/images/jira.svg",
+      desc: "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
       aos: "fade-up",
     },
     {
-      imgUrl: "assets/images/angular-material.svg",
-      shortDescription:
-        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
-      longDescription: "UI Component libraries",
-      aos: "fade-left",
-    },
-    {
-      imgUrl: "assets/images/angular-material.svg",
-      shortDescription:
-        "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
-      longDescription: "UI Component libraries",
+      imgUrl: "assets/images/softwares.svg",
+      desc: "UI Component libraries",
       aos: "fade-left",
     },
   ];

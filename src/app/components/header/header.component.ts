@@ -8,6 +8,7 @@ import {
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { AnimationOptions } from "ngx-lottie";
 import { ThemeService } from "src/app/Theme/theme.service";
 
 @Component({
@@ -31,7 +32,13 @@ import { ThemeService } from "src/app/Theme/theme.service";
   ],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private router: Router, private themeService: ThemeService) {}
+  constructor(private router: Router, private themeService: ThemeService) {
+    this.themeService.selectedTheme.subscribe((res) => {
+      this.theme = res;
+    });
+  }
+  theme: any;
+
   bounceDivState = "initial";
   hideMenu = true;
   routerLinks = [
@@ -66,6 +73,14 @@ export class HeaderComponent implements OnInit {
       icon: "la-id-card-alt",
     },
   ];
+
+  optionsSun: AnimationOptions = {
+    path: "/assets/lottie/sun.json",
+    loop: false,
+  };
+  optionsMoon: AnimationOptions = {
+    path: "/assets/lottie/moon.json",
+  };
   ngOnInit(): void {
     this.bounceDivState = "active";
   }

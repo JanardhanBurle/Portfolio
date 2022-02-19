@@ -40,31 +40,23 @@
         </div>
     </div>
 </div>
-<div class="row mob">
-    <div appBlurOnHover="card-small" data-aos="fade-right" class="card-small">
-        <img alt="Profile" src="assets/images/angular-material.svg" />
-        <p class="short-info">familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.</p>
-    </div>
 
-
-    <div appBlurOnHover="card-small" data-aos="fade-right" class="card-small">
-        <img alt="Profile" src="assets/images/git.svg" />
-        <p class="short-info">Strong preference for easy to use, intuitive shared Components.</p>
-    </div>
-
-
-    <div appBlurOnHover="card-small" data-aos="fade-up" class="card-small">
-        <img alt="Profile" src="assets/images/jira.svg" />
-        <p class="short-info">Fast load times and lag free interaction, my highest priority.</p>
-    </div>
-
-
-    <div appBlurOnHover="card-small" data-aos="fade-right" class="card-small">
-        <img alt="Profile" src="assets/images/xd.svg" />
-        <p class="short-info">Web Applications don't have to be static, I love making pages come to life.</p>
-    </div>
-    <div appBlurOnHover="card-small" data-aos="fade-right" class="card-small">
-        <img alt="Profile" src="assets/images/vscode.svg" />
-        <p class="short-info">Web Applications don't have to be static, I love making pages come to life.</p>
+<div [@bounce]="bounceDivState" class="row">
+    <div class="item" data-aos="fade-bottom">
+        <div class="tech-stack">And...</div>
     </div>
 </div>
+
+
+<ng-container *ngFor="let tech of techStackCards;let i=index;">
+    <div class="illustration-desc" [style]="i%2==0?'flex-direction:row':'flex-direction:row-reverse'">
+        <div data-aos="fade-right" class="left">
+            <img data-aos="flip-left" class="illustration" alt="Profile" [src]="tech.imgUrl" />
+        </div>
+        <div data-aos="fade-up" class="right">
+            <div class="desc">
+                {{tech.desc}}
+            </div>
+        </div>
+    </div>
+</ng-container>

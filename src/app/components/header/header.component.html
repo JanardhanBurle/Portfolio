@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="profile-section">
+    <div class=" profile-section">
         <img class="profile-pic" src="assets/images/profile.png" alt="" srcset="">
         <div class="text">
             <div class="name">
@@ -11,30 +11,38 @@
             </div>
         </div>
     </div>
-    <div class="menu-btn" (click)="hideMenu=!hideMenu;">
-        <div *ngIf="hideMenu;else close" class="menu-open">
-            <div class="span-1"></div>
-            <div class="span-2"></div>
-            <div class="span-3"></div>
+    <div class="menu-btn">
+        <div class="theme" title="Explore {{theme.name=='light'?'Dark':'Light'}} mode" (click)="changeTheme()">
+            <ng-lottie [options]="theme.name!='light'?optionsSun:optionsMoon">
+            </ng-lottie>
         </div>
-        <ng-template #close>
-            <div class="menu-close">
+        <div (click)="hideMenu=!hideMenu;">
+            <div *ngIf="hideMenu;else close" class="menu-open">
                 <div class="span-1"></div>
                 <div class="span-2"></div>
+                <div class="span-3"></div>
             </div>
-        </ng-template>
+            <ng-template #close>
+                <div class="menu-close">
+                    <div class="span-1"></div>
+                    <div class="span-2"></div>
+                </div>
+            </ng-template>
+        </div>
+
     </div>
     <div class="toolbar" role="banner">
         <ng-container *ngFor="let router of routerLinks">
             <div class="router-link">
                 <a class="title" href="#{{router.path}}" title="{{router.label}}">
-                    <i class="las" [ngClass]="router.icon"></i> <span>{{router.label}}</span>
+                    <i class="las" [ngClass]="router.icon"></i>
                 </a>
             </div>
         </ng-container>
-
-        <button (click)="changeTheme()">change Theme</button>
-
+        <div class="theme" title="Explore {{theme.name=='light'?'Dark':'Light'}} mode" (click)="changeTheme()">
+            <ng-lottie [options]="theme.name!='light'?optionsSun:optionsMoon">
+            </ng-lottie>
+        </div>
     </div>
 </div>
 

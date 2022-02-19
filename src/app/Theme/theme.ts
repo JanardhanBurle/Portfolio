@@ -54,7 +54,7 @@ export const dark: Theme = {
     "--error-default": "#EF3E36",
     "--error-dark": "#800600",
     "--error-light": "#FFCECC",
-    "--border-color-primary": "#3a3a3a",
+    "--border-color-primary": "#1e1e1e",
     "--border-color-secondary": "#393939",
     "--card-hover-bg": "rgba(0, 0, 0, 0.8)",
     "--background-shadow":
