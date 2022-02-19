@@ -9,7 +9,13 @@
         font-family: appfont2;
         padding: 10px 100px;
         background: var(--background-default);
-        ;
+        .theme {
+            width: 40px;
+            border: 2px solid #cccccc26;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
         .profile-section {
             display: flex;
             align-items: center;
@@ -135,7 +141,7 @@
                 font-weight: 900;
                 font-size: 22px;
                 font-weight: bold;
-                color: var(--foreground-default);
+                // color: var(--foreground-default);
                 margin-right: 5px;
             }
             span {

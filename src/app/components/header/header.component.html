@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="profile-section">
+    <div class=" profile-section">
         <img class="profile-pic" src="assets/images/profile.png" alt="" srcset="">
         <div class="text">
             <div class="name">
@@ -28,13 +28,14 @@
         <ng-container *ngFor="let router of routerLinks">
             <div class="router-link">
                 <a class="title" href="#{{router.path}}" title="{{router.label}}">
-                    <i class="las" [ngClass]="router.icon"></i> <span>{{router.label}}</span>
+                    <i class="las" [ngClass]="router.icon"></i>
                 </a>
             </div>
         </ng-container>
-
-        <button (click)="changeTheme()">change Theme</button>
-
+        <div class="theme" title="Explore {{theme.name=='light'?'Dark':'Light'}} mode" (click)="changeTheme()">
+            <ng-lottie [options]="theme.name!='light'?optionsSun:optionsMoon">
+            </ng-lottie>
+        </div>
     </div>
 </div>
 
