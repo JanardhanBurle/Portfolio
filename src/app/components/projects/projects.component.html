@@ -3,7 +3,7 @@
 <div [@bounce]="bounceDivState" class="row">
     <ng-container *ngFor="let project of projects">
         <div data-aos="flip-left" class="card">
-            <img alt="Profile" [src]="project.imageUrl" />
+            <img alt="Profile" [src]="theme.name=='light'?project.imageUrl:project.darkImageUrl" />
             <div class="project-info">
                 <div data-aos="fade-up" class="name">{{project.name}}</div>
                 <div data-aos="fade-up" class="desc">{{project.description}}</div>
