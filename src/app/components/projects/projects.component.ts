@@ -6,6 +6,7 @@ import {
   style,
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
+import { ThemeService } from "src/app/Theme/theme.service";
 
 @Component({
   selector: "app-projects",
@@ -28,13 +29,19 @@ import { Component, OnInit } from "@angular/core";
   ],
 })
 export class ProjectsComponent implements OnInit {
-  constructor() {}
+  theme: any;
+  constructor(private themeService: ThemeService) {
+    this.themeService.selectedTheme.subscribe((res) => {
+      this.theme = res;
+    });
+  }
 
   bounceDivState = "initial";
   showContent = false;
   projects = [
     {
       imageUrl: "assets/images/portfolio.svg",
+      darkImageUrl: "assets/images/portfolio_dark.svg",
       name: "My Portfolio Website",
       description: "Angular / Firebase / AOS",
       gitUrl: "https://github.com/JanardhanBurle/Portfolio",
