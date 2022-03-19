@@ -1,11 +1,11 @@
 @font-face {
     font-family: appfont;
-    src: url('/assets/fonts/FuturaBookfont.ttf');
+    src: url('../fonts/FuturaBookfont.ttf');
 }
 
 @font-face {
     font-family: appfont2;
-    src: url('/assets/fonts/FuturaBookfont.ttf');
+    src: url('../fonts/FuturaBookfont.ttf');
 }
 
 body {
@@ -183,13 +183,9 @@ h4 {
 }
 
 .duration {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    span {
-        color: #113f94;
-        background: #13419414;
-        padding: 5px 10px;
-    }
+    background: #13419414;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
 
 hr {

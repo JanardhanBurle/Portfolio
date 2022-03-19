@@ -20,6 +20,8 @@ import { LottieModule } from "ngx-lottie";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { ResumeComponent } from './components/resume/resume.component';
+import { HomeComponent } from './components/home/home.component';
 export function playerFactory() {
   return import(/* webpackChunkName: 'lottie-web' */ "lottie-web");
 }
@@ -38,6 +40,8 @@ export function playerFactory() {
     ContactMeComponent,
     ProgressBarComponent,
     BlurOnHoverDirective,
+    ResumeComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
