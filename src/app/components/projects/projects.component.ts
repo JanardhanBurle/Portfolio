@@ -49,6 +49,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       imageUrl: "assets/images/resume.svg",
+      darkImageUrl: "assets/images/resume.svg",
       name: "My Resume Template",
       description: "HTML5 / CSS3",
       gitUrl: "https://github.com/JanardhanBurle/Resume",

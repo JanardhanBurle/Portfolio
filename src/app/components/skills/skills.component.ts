@@ -94,7 +94,7 @@ export class SkillsComponent implements OnInit {
   techStackCards = [
     {
       imgUrl: "assets/images/angular-material.svg",
-      desc: " Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5, Data Driven Documents(D3.js) and Flexbox CSS.",
+      desc: "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5, Data Driven Documents(D3.js) and Flexbox CSS.",
       aos: "fade-right",
     },
     {
@@ -104,12 +104,12 @@ export class SkillsComponent implements OnInit {
     },
     {
       imgUrl: "assets/images/jira.svg",
-      desc: "Familiar with UI Component libraries like Angular Material, Prime NG, Bootstrap5 and Flexbox CSS.",
+      desc: "Has Good working experience on AGILE project management and software development that helps teams deliver value to customers faster and with fewer headaches. Good Hands on in JIRA, Microsoft Teams.",
       aos: "fade-up",
     },
     {
       imgUrl: "assets/images/softwares.svg",
-      desc: "UI Component libraries",
+      desc: "Hands on experience on IDEs like Android Studio, Visual Studio and VS code text editors.",
       aos: "fade-left",
     },
   ];
