@@ -129,7 +129,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #660132;
+    /* color: #660132; */
     border-bottom: 1px solid #f6f6f633;
     margin: 5px 0;
     padding: 0 10px 0 0;
@@ -137,7 +137,7 @@ body {
 
 .flex-row-ac a {
     font-size: 15px;
-    color: #660132;
+    color: #000;
     text-decoration: underline;
 }
 
@@ -155,13 +155,11 @@ body {
 .left-sec {
     width: 65%;
     padding: 25px;
-    /* background: linear-gradient(to left, transparent 0%, #ada2c9 100%); */
 }
 
 .right-sec {
-    width: 35%;
+    width: 36%;
     padding: 20px;
-    background: linear-gradient(to right, transparent 0%, #ada2c9 100%);
 }
 
 .flex-wrap {
@@ -249,7 +247,7 @@ h4 {
 }
 
 hr {
-    border-color: #cccccc1f;
+    border-color: #fafafa21;
 }
 
 p {
