@@ -104,12 +104,11 @@ body {
 }
 
 .bio-data {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .bio-data p {
     width: 50%;
-    color: #660232;
     line-height: 5px;
     font-size: 14px;
 }
@@ -175,6 +174,18 @@ body {
     font-size: 16px;
     list-style: none;
     margin: 5px;
+    color: #660332;
+}
+
+.mobile span {
+    background: #66023214;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    list-style: none;
+    margin: 5px;
+    color: #660332;
 }
 
 .skills-list ul {
