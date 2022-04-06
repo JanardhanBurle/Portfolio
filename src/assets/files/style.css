@@ -104,12 +104,11 @@ body {
 }
 
 .bio-data {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .bio-data p {
     width: 50%;
-    color: #660232;
     line-height: 5px;
     font-size: 14px;
 }
