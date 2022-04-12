@@ -70,9 +70,9 @@
 
                 <mat-form-field class="form-control" appearance="standard">
                     <mat-label>Message</mat-label>
-                    <textarea formControlName="message" rows="6" matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+                    <textarea formControlName="message" rows="6" matInput placeholder="Type something here..."></textarea>
                     <mat-error *ngIf="form.controls['message'].invalid">
-                        Email is <strong>required</strong>
+                        Message is <strong>required</strong>
                     </mat-error>
                 </mat-form-field>
 

@@ -22,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { ResumeComponent } from './components/resume/resume.component';
 import { HomeComponent } from './components/home/home.component';
+import { ResumeViewComponent } from './components/resume-view/resume-view.component';
 export function playerFactory() {
   return import(/* webpackChunkName: 'lottie-web' */ "lottie-web");
 }
@@ -42,6 +43,7 @@ export function playerFactory() {
     BlurOnHoverDirective,
     ResumeComponent,
     HomeComponent,
+    ResumeViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +52,7 @@ export function playerFactory() {
     NgxTypedJsModule,
     MatInputModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     ReactiveFormsModule,
     LottieModule.forRoot({ player: playerFactory }),
