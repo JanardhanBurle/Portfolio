@@ -91,7 +91,7 @@ export class ResumeComponent implements OnInit {
       resumeId: 'JANARDHAN_RESUME',
       data: this.form.value
     };
-    this.http.post('http://localhost:3000/resume', req).subscribe(res => console.log(res));
+    this.http.post('https://us-central1-janardhan-portfolio.cloudfunctions.net/app/resume', req).subscribe(res => console.log(res));
   }
 
 }
