@@ -10,7 +10,7 @@ import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 export class ResumeComponent implements OnInit {
   form!: FormGroup;
   constructor(private fb: FormBuilder, private http: HttpClient) {
-    this.http.get('http://localhost:3000/resume?resumeId=JANARDHAN_RESUME').subscribe((res: any) => {
+    this.http.get('https://us-central1-janardhan-portfolio.cloudfunctions.net/app/resume?resumeId=JANARDHAN_RESUME').subscribe((res: any) => {
       this.form = this.fb.group({
         description: [res.description],
         experience: new FormArray([])

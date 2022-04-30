@@ -14,7 +14,7 @@ export class ResumeViewComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    this.http.get('http://localhost:3000/resume?resumeId=JANARDHAN_RESUME').subscribe((res: any) => {
+    this.http.get('https://us-central1-janardhan-portfolio.cloudfunctions.net/app/resume?resumeId=JANARDHAN_RESUME').subscribe((res: any) => {
       this.data = res;
       console.log(res);
       this.form = this.fb.group({
