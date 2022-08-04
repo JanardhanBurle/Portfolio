@@ -43,7 +43,7 @@ export class ProjectsComponent implements OnInit {
       imageUrl: "assets/images/portfolio.svg",
       darkImageUrl: "assets/images/portfolio_dark.svg",
       name: "My Portfolio Website",
-      description: "Angular / Firebase / AOS",
+      description: "Angular, Firebase Hosting, Firebase Functions, AOS",
       gitUrl: "https://github.com/JanardhanBurle/Portfolio",
       webUrl: "https://janardhan-portfolio.web.app/",
     },
@@ -51,9 +51,9 @@ export class ProjectsComponent implements OnInit {
       imageUrl: "assets/images/resume.svg",
       darkImageUrl: "assets/images/resume.svg",
       name: "My Resume Template",
-      description: "HTML5 / CSS3",
+      description: "Angular 12, Firebase Functions, Sedja PDF converter",
       gitUrl: "https://github.com/JanardhanBurle/Resume",
-      webUrl: "/assets/files/resume.html",
+      webUrl: "https://janardhan-portfolio.web.app/resume-view",
     },
   ];
   ngOnInit(): void {

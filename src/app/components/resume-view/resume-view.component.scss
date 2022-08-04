@@ -1,14 +1,3 @@
-body {
-    font-family: appfont;
-    margin: 0;
-    background: var(--background-default);
-}
-
-textarea {
-    width: 100%;
-    height: auto;
-}
-
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -257,7 +246,7 @@ hr {
 }
 
 p {
-    color: var(--background-default)000c2;
+    color: #000000c2;
     line-height: 25px;
 }
 
@@ -482,40 +471,48 @@ svg {
 }
 
 @keyframes arrow {
+
     0%,
     100% {
         top: 105%
     }
+
     50% {
         top: 106%
     }
 }
 
 @-webkit-keyframes arrow {
+
     0%,
     100% {
         top: 105%
     }
+
     50% {
         top: 106%
     }
 }
 
 @-moz-keyframes arrow {
+
     0%,
     100% {
         top: 105%
     }
+
     50% {
         top: 106%
     }
 }
 
 @-o-keyframes arrow {
+
     0%,
     100% {
         top: 105%
     }
+
     50% {
         top: 106%
     }
