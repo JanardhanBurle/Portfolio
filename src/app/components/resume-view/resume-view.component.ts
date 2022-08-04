@@ -1,15 +1,17 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormBuilder, FormArray, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-resume-view',
   templateUrl: './resume-view.component.html',
-  styleUrls: ['./resume-view.component.scss']
+  styleUrls: ['./resume-view.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ResumeViewComponent implements OnInit {
   form!: FormGroup;
   data: any;
+  today = new Date();
   constructor(private fb: FormBuilder, private http: HttpClient) {
 
   }
