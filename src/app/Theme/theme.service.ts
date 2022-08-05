@@ -9,6 +9,9 @@ export class ThemeService {
   private active: Theme = light;
   private availableThemes: Theme[] = [light, dark];
   public selectedTheme = new BehaviorSubject<any>(light);
+
+  constructor(){}
+
   getAvailableThemes(): Theme[] {
     return this.availableThemes;
   }
