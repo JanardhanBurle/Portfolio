@@ -31,6 +31,7 @@ import * as moment from "moment";
 export class AboutMeComponent implements OnInit {
   years: any;
   months: any;
+  age: any;
   constructor() {}
 
   bounceDivState = "initial";
@@ -100,11 +101,11 @@ export class AboutMeComponent implements OnInit {
     },
   ];
   ngOnInit(): void {
-    this.bounceDivState = "active";
-    const duration = moment.duration(
-      moment(new Date()).diff(moment("2016-11-10 9:00:00"))
-    );
-    this.years = Math.round(duration.asYears());
-    this.months = Math.round((duration.asYears() - this.years) * 12);
+    const m = moment();
+    this.years = m.diff('2016-11-10', 'years');
+    this.age = (m.diff('1994-09-11', 'months') / 12).toFixed();
+    this.months = m.diff('2016-11-10', 'months') % 12;
   }
+
+
 }
