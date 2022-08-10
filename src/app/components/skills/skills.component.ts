@@ -89,6 +89,20 @@ export class SkillsComponent implements OnInit {
       icon: "assets/images/sitefinity.png",
       exp: 5.3,
     },
+    {
+      label: "lit.dev",
+      progress: 5,
+      aos: "fade-up",
+      icon: "assets/images/lit.svg",
+      exp: 1,
+    },
+    {
+      label: "Shoelace",
+      progress: 5,
+      aos: "fade-up",
+      icon: "assets/images/shoelace.svg",
+      exp: 1,
+    },
   ];
 
   techStackCards = [
