@@ -59,7 +59,7 @@ export class ResumeComponent implements OnInit {
 
 
   addPoint(array: any) {
-    array.insert(0, new FormControl());
+    array.push(new FormControl());
   }
 
   removePoint(index: any, array: any) {
