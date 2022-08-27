@@ -34,25 +34,26 @@ export class SkillsComponent implements OnInit {
   showContent = false;
   technology = [
     {
+      label: "Angular",
+      progress: 9,
+      aos: "fade-up",
+      icon: "assets/images/angular.svg",
+      exp: 6,
+    },
+    {
       label: "Flutter",
       progress: 7,
       aos: "fade-up",
       icon: "assets/images/flutter.svg",
-      exp: 1.5,
+      exp: 2,
     },
-    {
-      label: "Angular V(13)",
-      progress: 9,
-      aos: "fade-up",
-      icon: "assets/images/angular.svg",
-      exp: 5.3,
-    },
+
     {
       label: "Javascript",
       progress: 9,
       aos: "fade-up",
       icon: "assets/images/js.png",
-      exp: 5.3,
+      exp: 6,
     },
     {
       label: "Node Js",
@@ -66,28 +67,28 @@ export class SkillsComponent implements OnInit {
       progress: 9,
       aos: "fade-up",
       icon: "assets/images/html.png",
-      exp: 5.3,
+      exp: 6,
     },
     {
       label: "CSS3",
       progress: 9,
       aos: "fade-up",
       icon: "assets/images/css.svg",
-      exp: 5.3,
+      exp: 6,
     },
     {
       label: "Backbase",
       progress: 6,
       aos: "fade-up",
       icon: "assets/images/backbase.png",
-      exp: 5.3,
+      exp: 6,
     },
     {
       label: "Sitefinity",
       progress: 6,
       aos: "fade-up",
       icon: "assets/images/sitefinity.png",
-      exp: 5.3,
+      exp: 6,
     },
     {
       label: "lit.dev",
