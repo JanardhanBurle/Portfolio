@@ -29,7 +29,7 @@ import * as moment from "moment";
   ],
 })
 export class AboutMeComponent implements OnInit {
-  years: any;
+  experience: any;
   months: any;
   age: any;
   constructor() {}
@@ -102,7 +102,7 @@ export class AboutMeComponent implements OnInit {
   ];
   ngOnInit(): void {
     const m = moment();
-    this.years = m.diff('2016-11-10', 'years');
+    this.experience = (m.diff('2016-11-10',  'months') / 12).toFixed();
     this.age = (m.diff('1994-09-11', 'months') / 12).toFixed();
     this.months = m.diff('2016-11-10', 'months') % 12;
   }
