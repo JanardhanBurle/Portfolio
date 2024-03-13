@@ -17,7 +17,7 @@ export class HttpService {
 
   post(request: any) {
     return this.http
-      .post("https://reach-out-to-me.web.app/api/mail", request, {
+      .post("https://us-central1-janardhan-portfolio.cloudfunctions.net/email", request, {
         headers: this.httpHeaders,
         responseType: "json",
       })
