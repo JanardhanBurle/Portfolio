@@ -17,7 +17,7 @@ export class HttpService {
 
   post(request: any) {
     return this.http
-      .post("https://janardhan-portfolio.web.app/app/api/mail", request, {
+      .post("https://janardhan-portfolio.web.app/email/api/mail", request, {
         headers: this.httpHeaders,
         responseType: "json",
       })
